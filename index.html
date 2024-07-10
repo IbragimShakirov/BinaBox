@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinaBox UI KIT</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+            <div class="page-header-logo">
+                <a href="index.html" class="logo">
+                    <img src="./img/Logo.svg" alt="logo BinaBox" width="35" class="logo-img">
+                    <span class="logo-text">Binabox</span>
+                </a>
+            </div> 
+
+            <nav class="page-header-nav">
+                <ul class="header-nav-list">
+                    <li class="nav-item"> 
+                        <button class="nav-dropbtn">Home</button>                     
+                        <div class="nav-dropdown-content">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="catalog.html" class="nav-link">Catalog</a>
+                            <a href="contact.html" class="nav-link">Contact us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <button class="nav-dropbtn">About</button>                     
+                        <div class="nav-dropdown-content">
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <button class="nav-dropbtn">Roadmap</button>                     
+                        <div class="nav-dropdown-content">
+                            <a href="phase1.html" class="nav-link">PHASE 1</a>
+                            <a href="phase2.html" class="nav-link">PHASE 2</a>
+                            <a href="phase3.html" class="nav-link">PHASE 3</a>
+                            <a href="phase4.html" class="nav-link">PHASE 4</a>                           
+                        </div>
+                    </li>
+
+                    <li class="nav-item"> <a href="catalog.html" class="nav-link">Collection</a> </li>
+
+                    <li class="nav-item"> 
+                        <button class="nav-dropbtn">FAQs</button>                     
+                        <div class="nav-dropdown-content">
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <button class="nav-dropbtn">Pages</button>                     
+                        <div class="nav-dropdown-content">
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                            <a href="example.html" class="nav-link">Example</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="theme-toggle">
+                <button class="btn-theme-toggle" onclick="toggleTheme()">
+                    <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" class="theme-toggle-img">                   
+                </button>
+            </div>
+
+            <div class="page-header-connect">
+                <a href="https://discord.com" target="_blank" class="link-discord">  
+                    <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
+                    Discord              
+                </a>
+
+                <a href="https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                    <img src="./img/wallet.svg" alt="wallet" width="20" height="20" class="logo-wallet">
+                    Connect
+                </a>                              
+            </div>
+    </header>
+    
+    <main class="page-main">
+        <section class="welcome-section">
+            <h1 class="welcome-heading">WITH <span class="welcome-heading-text">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+
+            <p class="welcome-text">We are the best way to check the rarity of NFT collection</p>
+
+            <img src="./img/binabox-big-pic.svg" alt="Big box labeled binabox" width="300">
+
+            <div class="welcome-container">
+                <div class="container-stats">
+                    <dl class="stat-list">
+                        <dt class="stat-item">Total Iteam</dt>
+                        <dd class="stat-velue">2200+</dd>
+
+                        <dt class="stat-item">Profiles whitelisted</dt>
+                        <dd class="stat-velue">1000+</dd>
+                    </dl>
+                </div>
+
+                <div class="welcome-buttons">
+                    <a href="connect-wallet.html" target="_blank" class="link-connect-wallet">Connect walet</a> 
+
+                    <a href="whitelist.html" target="_blank" class="link-whitelist">Whitelist now</a> 
+                </div>
+            </div>                      
+        </section>
+
+        <section class="all-items">
+            <h2 class="hidden">All items</h2>           
+            <article class="all-items-item">
+                <a href="catalog-items.html" class="item-link">
+                    <img src=".//img/item1.svg" alt="picture description" width="100" class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>
+            
+            <article class="all-items-item" class="item-link">
+                <a href="catalog-items.html">
+                    <img src=".//img/item2.svg" alt="picture description" width="100" class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>
+            
+            <article class="all-items-item" class="item-link">
+                <a href="catalog-items.html">
+                    <img src=".//img/item3.svg" alt="picture description"width="100"  class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>
+            
+            <article class="all-items-item" class="item-link">
+                <a href="catalog-items.html">
+                    <img src="./img/item4.svg" alt="picture description" width="100" class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>
+            
+            <article class="all-items-item" class="item-link">
+                <a href="catalog-items.html">
+                    <img src="./img/item5.svg" alt="picture description" width="100" class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>
+            
+            <article class="all-items-item" class="item-link">
+                <a href="catalog-items.html">
+                    <img src="./img/item6.svg" alt="picture description" width="100" class="catalog-item-img">
+                    <span class="item-name">SKISIRS#2</span>
+                </a>
+            </article>           
+        </section>
+
+        <section class="about">
+            <h2 class="about-heading">About us</h2>
+
+            <p class="about-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est <br>laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat
+            </p>
+
+            <ol class="about-list">
+                <li class="about-list-item">
+                    <h3 class="about-number">01</h3>
+                    <h4 class="about-name">HIGH QUALITY</h4>
+                    <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                </li>
+               
+                <li class="about-list-item">
+                    <h3 class="about-number">02</h3>
+                    <h4 class="about-name">BIG COLLECTION</h4>
+                    <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                </li>
+               
+                <li class="about-list-item">
+                    <h3 class="about-number">03</h3>
+                    <h4 class="about-name">TOP RESOURCE</h4>
+                    <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                </li>
+               
+                <li class="about-list-item">
+                    <h3 class="about-number">04</h3>
+                    <h4 class="about-name">BIG COMMUNITY</h4>
+                    <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                </li>                            
+            </ol>
+
+            <a href="about.html" class="about-btn">Read More</a>
+
+        </section>
+
+        <section class="how">
+            <h2 class="how-heading">HOW TO <span class="how-heading-text">BINABOX</span> WORK</h2>
+
+            <ol class="how-steps">
+                <li class="how-step"> 
+                    <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                        <img src="./img/wallet-and-card.svg" alt="wallet and card icon" width="40" class="how-img">
+                        <h3 class="how-step-heading">STEP 1</h3>
+                        <p class="how-step-text">Connect Your Wallet</p>
+                    </a>
+                </li>
+                
+                <li class="how-step"> 
+                    <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                        <img src="./img/docs.svg" alt="docs icon" width="40" class="how-img">
+                        <h3 class="how-step-heading">STEP 2</h3>
+                        <p class="how-step-text">Sellect Your Quailityt</p>
+                    </a>
+                </li>
+
+                <li class="how-step"> 
+                    <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                        <img src="./img/pig.svg" alt="pig icon" width="40" class="how-img">
+                        <h3 class="how-step-heading">STEP 3</h3>
+                        <p class="how-step-text">Confiem the Transaction</p>
+                    </a>
+                </li>
+
+                <li class="how-step"> 
+                    <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                        <img src="./img/cart.svg" alt="cart icon" width="40" class="how-img">
+                        <h3 class="how-step-heading">STEP 4</h3>
+                        <p class="how-step-text">Receive Your NFTs</p>
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="road">
+            <h2 class="road-heading">ROAD MAP</h2>
+
+            <div class="road-content">
+                <div class="road-img">
+                    <img src="road-img1.svg" alt="green chip" width="1200" class="road-img1">
+                    <img src="road-img2.svg" alt="green chip" width="300" class="road-img2">
+                    <img src="road-img3.svg" alt="green chip" width="300" class="road-img2">
+                </div>
+
+                <div class="road-phases">
+                    <!-- To hide a number from <ol> via CSS in the future, here(below in <ol>) I need to write class="hiden"? -->
+                    <ol class="road-phases-list">
+                        <li class="road-phases1">
+                            <h3 class="road-phases1-heading">PHASE 1</h3>
+                            <ul class="road-phases1-content">
+                                <li class="road-phases-text">
+                                    <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
+                                    Befriending & Chat Functions   
+                                </li>
+
+                                <li class="road-phases-text">
+                                    <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
+                                    Challenging Feature 
+                                </li>
+
+                                <li class="road-phases-text">
+                                    <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
+                                    Corsair Wheel
+                                </li>
+
+                                <li class="road-phases-text">
+                                    <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
+                                    Mobile Version Launch
+                                </li>
+                            </ul>
+
+                            <a href="phase.html" class="btn-read-nore" target="_blank">READ MORE</a>
+                        </li>
+                        <!-- and so on... -->                       
+                    </ol>              
+                </div>              
+            </div>
+
+            <ol class="phase-nav">
+                <li class="phase-nav-item">
+                    <button class="phase-nav-btn">PHASE 1</button>
+                </li>
+
+                <li class="phase-nav-item">
+                    <button class="phase-nav-btn">PHASE 2</button>
+                </li>
+
+                <li class="phase-nav-item">
+                    <button class="phase-nav-btn">PHASE 3</button>
+                </li>
+
+                <li class="phase-nav-item">
+                    <button class="phase-nav-btn">PHASE 4</button>
+                </li>               
+            </ol>
+        </section>
+
+        <section class="team">
+            <h2 class="team-heading">Out team</h2>
+            <article class="team-member">
+                <img src="./img/ralph-edwards.svg" alt="Ralph Edwards" width="130" class="member-img">
+
+                <h3 class="member-name">Ralph Edwards</h3>
+
+                <p class="member-position">Founder</p>
+
+                <div class="member-links">
+                    <a href="https://www.linkedin.com" class="member-links" target="_blank">
+                        <img src="./img/linkedin-icon.svg" alt="linkedin-icon" width="25" class="member-links-icon">
+                    </a>
+
+                    <a href="https://facebook.com" class="member-links" target="_blank">
+                        <img src="./img/facebook-icon.svg" alt="facebook-icon" width="15" class="member-links-icon">
+                    </a>
+
+                    <a href="https://instagram.com" class="member-links" target="_blank">
+                        <img src="./img/instagram-icon.svg" alt="instagram-icon" width="25" class="member-links-icon">
+                    </a>
+
+                    <a href="https://t.me" class="member-links" target="_blank">
+                        <img src="./img/telegram-icon.svg" alt="telegram-icon" width="25" class="member-links-icon">
+                    </a>
+                </div>
+            </article>
+            <!-- and so on... -->
+
+        </section>
+
+        <section class="partners">
+            <table class="partners-table">
+                <thead class="partners-table-heading">
+                    <span class="partners-table-text">BINABOX</span> PARTNERS
+                </thead>
+
+                <tbody class="partners-table-body">
+                    <tr class="partners-table-row">
+                        <td class="partners-table-data">
+                            <a href="partner1-site.com" target="_blank" class="partner-site">
+                                <img src="./img/partner1-icon.svg" width="150" alt="partner1 name" class="partner-icon">
+                            </a>
+                        </td>
+                        
+                        <td>
+                            <a href="partner2-site.com" target="_blank" class="partner-site">
+                                <img src="./img/partner2-icon.svg" width="150" alt="partner2 name" class="partner-icon">
+                            </a>
+                        </td>
+                        <!-- and so on... -->
+                         
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="partners-table-row">
+                        <td class="partners-table-data">
+                            <a href="partner7-site.com" target="_blank" class="partner-site">
+                                <img src="./img/partner7-icon.svg" width="150" alt="partner7 name" class="partner-icon">
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="faqs">
+            <h2 class="faqs-heading">FAQs</h2>
+
+            <details class="faqs-question">
+                <summary class="question-tittle">What are the NFTs?</summary>
+                <p class="faq-answer">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
+            </details>
+
+            <details class="faqs-question">
+                <summary class="question-tittle">How do i get NFTs?</summary>
+                <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto.</p>
+            </details>
+
+            <details class="faqs-question">
+                <summary class="question-tittle">How can we buy your NFTs?</summary>
+                <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto.</p>
+            </details>
+
+            <details class="faqs-question">
+                <summary class="question-tittle">Who are the team behind the project?</summary>
+                <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto.</p>
+            </details>
+        </section>
+    </main>
+    
+    <footer class="page-footer">
+        <section class="footer">
+            <div class="footer-top-block">
+                <h2 class="footer-top-heading">Join our community</h2>
+
+                <p class="footer-top-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <a href="https://discord.com" target="_blank" class="footer-link-discord">                 
+                    <button class="footer-link-discord-btn">
+                        <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
+                        Discord 
+                    </button>
+                </a>
+
+                <a href="whitelist.html" target="_blank" class="footer-link-whitelist">
+                    <button class="footer-link-whitelist-btn">Whitelist now</button>
+                </a>
+            
+                <!-- Iam forgot that we dont need to make this form and decided to leave it) -->
+                <form action="/user-email-newsletter" method="POST" class="subscription-form">                
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="http://x.com" class="socials-link">
+                            <img src="./img/twitter-icon.svg" alt="twitter icon" class="socials-link">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com">
+                            <img src="./img/facebook-icon.svg" alt="facebook icon" class="socials-link">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://t.me">
+                            <img src="./img/telegram-icon.svg" alt="telegram icon" class="socials-link">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://youtube.com">
+                            <img src="./img/youtube-icon.svg" alt="youtube icon" class="socials-link">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://tiktok.com">
+                            <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" class="socials-link">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://discord.com">
+                            <img src="./img/Discord.svg" alt="discord icon" class="socials-link">
+                        </a>
+                    </li>
+                </ul>
+        </div>
+
+            <div>
+                <div class="page-footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="./img/Logo.svg" alt="logo BinaBox" width="25" class="logo-img">
+                        <span class="logo-text">Binabox</span>
+                    </a>
+                </div> 
+               
+                    &copy; 2022 Binabox - All rights reserved.
+                
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a href="index.html" class="footer-nav-link">Home</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">About</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">Roadmap</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">Our team</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link">FAQs</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>    
+</body>
+</html>
+
+
+<section>
+    <h1></h1>
+    <p></p>
+</section>

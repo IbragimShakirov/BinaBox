@@ -1,0 +1,20 @@
+.partners-table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #000000;
+	border-collapse: collapse; 
+	background-color: #4c4343;
+}
+.partners-table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #5a1313;
+	border: 1px solid #000000;
+}
+.partners-table td {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+.how-img {
+	background-color: rgb(23, 50, 50);
+}
