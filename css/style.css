@@ -1,9 +1,9 @@
-.partners-table {
+.partners-list {
 	width: 100%;
 	margin-bottom: 20px;
 	border: 1px solid #000000;
 	border-collapse: collapse; 
-	background-color: #4c4343;
+	background-color: #7de0d3;
 }
 .partners-table th {
 	font-weight: bold;
