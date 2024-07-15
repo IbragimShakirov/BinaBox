@@ -57,23 +57,24 @@
     
     <main class="content">
         <section class="item-detail">
-            <header class="item-detail-heading">  <!-- если header уже имеет класс, есть ли смысл прописывать класс h, если кроме него там ничего нет? -->
-                <h1>ITEM DETAIL</h1> 
+            <header class="item-detail-header">  <!-- если header уже имеет класс, есть ли смысл прописывать класс h, если кроме него там ничего нет? -->
+                <h1 class="item-detail-heading">ITEM DETAIL</h1>
+
+                <nav class="item-detail-nav">
+                    <ul class="item-detail-navlist hidden">
+                        <li class="item-detail-navitem">
+                            <a href="index.html" class="item-detail-navlink">Home</a>                       
+                        </li>
+    
+                        &VerticalLine; <!-- <hr class="vertical-line"> - этот вариант не очень или на уровне с этим? -->
+                       
+                        <li class="item-detail-navitem">
+                            <a href="catalog-items.html" class="item-detail-navlink">Item detail</a>
+                        </li>                    
+                    </ul>
+                </nav>
             </header>
            
-            <nav class="item-detail-nav">
-                <ul class="item-detail-navlist hidden">
-                    <li class="item-detail-navitem">
-                        <a href="index.html" class="item-detail-navlink">Home</a>                       
-                    </li>
-
-                    <div class="vertical-line">&VerticalLine;</div> <!-- <hr class="vertical-line"> - этот вариант не очень или на уровне с этим? -->
-                   
-                    <li class="item-detail-navitem">
-                        <a href="catalog-items.html" class="item-detail-navlink">Item detail</a>
-                    </li>                    
-                </ul>
-            </nav>
         
             <article class="product-card">
                  <figure class="product-info"> 
@@ -87,61 +88,51 @@
                 </p>
 
                 <dl class="product-features">
-                    <dt class="product-termin">Clothing
-                        <dd class="product-termin-description">SNAKE</dd>
-                    </dt>
-                    <dt class="product-termin">Eyes
-                        <dd class="product-termin-description">MIX</dd>
-                    </dt>
-                    <dt class="product-termin">Face
-                        <dd class="product-termin-description">GREEN</dd>
-                    </dt>
-                    <dt class="product-termin">Skin
-                        <dd class="product-termin-description">GREEN</dd>
-                    </dt>
-                    <dt class="product-termin">Background
-                        <dd class="product-termin-description">GREEN LIGHT</dd>
-                    </dt>
-                    <dt class="product-termin">Special
-                        <dd class="product-termin-description">CAT</dd>
-                    </dt>
+                    <dt class="product-termin">Clothing</dt>
+                    <dd class="product-termin-description">SNAKE</dd>
+
+                    <dt class="product-termin">Eyes</dt>
+                    <dd class="product-termin-description">MIX</dd>
+
+                    <dt class="product-termin">Face</dt>
+                    <dd class="product-termin-description">GREEN</dd>
+
+                    <dt class="product-termin">Skin</dt>
+                    <dd class="product-termin-description">GREEN</dd>
+
+                    <dt class="product-termin">Background</dt>
+                        dd class="product-termin-description">GREEN LIGHT</dd>
+
+                    <dt class="product-termin">Special</dt>
+                    <dd class="product-termin-description">CAT</dd>
+
                 </dl>
                 
                 <p class="product-price">
                     <span class="price">Price:</span> 0.15 ETH
                 </p>
 
-                <section class="timer">  <!--это я сделал заготовку для js, надеюсь, это имеет что-то общее с правдой) -->
-                    <!--time используется только для статичных дат? -->
-                    <header class="timer-heading">
-                        <h2>PUBLIC END IN</h2>
-                    </header>
-
-                    <div class="timer-item">
-                        <div class="timer-value">00</div>
-                        <span class="timer-unit">DAYS</span>
-                    </div>
-
-                    <div class="timer-separator>:</div>
-
-                    <div class="timer-item">
-                        <div class="timer-value">00</div>
-                        <span class="timer-unit">HOURS</span>
-                    </div>
-
-                    <div class="timer-separator>:</div>
-
-                    <div class="timer-item">
-                        <div class="timer-value">00</div>
-                        <span class="timer-unit">MINUTES</span>
-                    </div>
-
-                    <div class="timer-separator>:</div>
-
-                    <div class="timer-item">
-                        <div class="timer-value">00</div>
-                        <span class="timer-unit">SECONDS</span>
-                    </div>                   
+                <section class="timer">
+                   
+                    <h2 class="timer-heading">PUBLIC END IN</h2>
+                    
+                    <dl>
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">DAYS</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">HOURS</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">MINUTES</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">SECONDS</dt>   
+                    </dl>     
+                    
+                    <div class="timer-separator">:</div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-separator">:</div>
                 </section>
                 
                 <button class="product-buybtn">
@@ -162,9 +153,7 @@
         </section>
 
         <section class="explore">
-            <header class="explore-heading">
-                <h2>EXPLORE COLECTIONS</h2> 
-            </header>
+            <h2 class="explore-heading">EXPLORE COLECTIONS</h2>    
             
             <ul class="products-list hidden">
                 <li class="products-item">
@@ -245,10 +234,8 @@
     </main>
 
     <aside class="joinus">
-        <header class="joinus-heading">
-            <h2>Join our community</h2>
-        </header>
-        
+        <h2 class="joinus-heading">Join our community</h2>
+               
         <p class="joinus-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         
         <a href="https://discord.com" target="_blank" class="joinus-link">                 
@@ -274,8 +261,7 @@
                 </div>
 
                 <nav class="footer-other-nav">
-
-                    <span class="other-nav">Subscribe</span>
+                    <h3 class="other-nav-heading">Subscribe</h3>
 
                     <ul class="other-nav-list">
                         <li class="other-nav-item">
@@ -300,7 +286,7 @@
                 </nav>
 
                 <nav class="footer-nav-company">
-                    <span class="company">Company</span> 
+                    <h3 class="other-nav-heading">Company</h3> 
 
                         <ul class="company-list">
                             <li class="company-item">
@@ -325,44 +311,45 @@
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
+
             <div class="footer-other-bottom-block">
                 <p>&copy;Binabox 2022  - All rights reserved.</p> 
+
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="http://x.com" class="socials-link">
+                            <img src="./img/twitter-icon.svg" alt="twitter icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com" class="socials-link">
+                            <img src="./img/facebook-icon.svg" alt="facebook icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://t.me" class="socials-link">
+                            <img src="./img/telegram-icon.svg" alt="telegram icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://youtube.com" class="socials-link">
+                            <img src="./img/youtube-icon.svg" alt="youtube icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://tiktok.com" class="socials-link">
+                            <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://discord.com" class="socials-link">
+                            <img src="./img/Discord.svg" alt="discord icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-            <ul class="socials-list">
-                <li class="socials-item">
-                    <a href="http://x.com" class="socials-link">
-                        <img src="./img/twitter-icon.svg" alt="twitter icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://facebook.com" class="socials-link">
-                        <img src="./img/facebook-icon.svg" alt="facebook icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://t.me" class="socials-link">
-                        <img src="./img/telegram-icon.svg" alt="telegram icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://youtube.com" class="socials-link">
-                        <img src="./img/youtube-icon.svg" alt="youtube icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="http://tiktok.com" class="socials-link">
-                        <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="http://discord.com" class="socials-link">
-                        <img src="./img/Discord.svg" alt="discord icon" loading="lazy" class="socials-img">
-                    </a>
-                </li>
-            </ul>
         </section>
     </footer> 
 
