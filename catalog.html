@@ -37,12 +37,11 @@
             <!-- and so on -->
             </ul>
         </nav>
-
-        <div class="theme-toggle">
-            <button class="btn-theme-toggle" onclick="toggleTheme()">
-                <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" class="theme-toggle-img">                   
-            </button>
-        </div>
+       
+        <button class="btn-theme-toggle" onclick="toggleTheme()">
+            <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" class="theme-toggle-img">                   
+        </button>
+       
 
         <div class="page-header-connect">
             <a href="https://discord.com" target="_blank" class="link-discord">  
@@ -61,12 +60,11 @@
          <section class="welcome-container"> <!--или лучше div? -->
             <h1 class="welcome-heading">EXPLORE COLECTIONS</h1>
             <nav class="welcome-nav">
-                <a href="index.html" class="welcome-nav-link">Home</a>
-
-                <span class="vertical-line"></span>
-
-                <a href="catalog.html" class="welcome-nav-link">Collections</a>
-
+                <ul>
+                    <a href="index.html" class="welcome-nav-link">Home</a>
+                    
+                    <a href="catalog.html" class="welcome-nav-link">Collections</a>
+                </ul>
             </nav>
         </section>
 
@@ -141,10 +139,8 @@
                 </ul>              
             </aside>
 
-            <aside class="sidebar-selected-filters">
-                <div class="selected-filters" id="selectedFilters">
-                    <button class="resetFilters" type="reset">Clear All</button>
-                </div>
+            <aside class="sidebar-selected-filters">                
+                    <button class="resetFilters" type="reset">Clear All</button>              
             </aside>
 
             <article class="catalog-item">
@@ -182,7 +178,7 @@
 
                 <nav class="footer-other-nav">
 
-                    <span class="other-nav">Subscribe</span> <!--тут ведь не Subscribe должен быть?) -->
+                    <span class="other-nav">Subscribe</span>
 
                     <ul class="other-nav-list">
                         <li class="other-nav-item">
@@ -270,9 +266,7 @@
                     </a>
                 </li>
             </ul>
-
         </section>
-
     </footer>    
 </body>
 </html>

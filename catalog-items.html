@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKISIRS#4587 - BinaBox</title>
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+
+<body>   
+    <header class="page-header">           
+        <a href="index.html" class="logo">
+            <img src="./img/Logo.svg" alt="logo BinaBox" width="35" height="35" loading="lazy" class="logo-img">
+            <span class="logo-text">Binabox</span>
+        </a>           
+
+        <nav class="page-header-nav">
+            <ul class="header-nav-list">
+                <li class="nav-item"> 
+                    <a href="index.html" class="nav-dropbtn" >Home</a>
+
+                    <ul class="nav-dropdown-content">
+                        <a href="catalog.html" class="nav-link">Catalog</a>
+                        <a href="contact.html" class="nav-link">Contact us</a>
+                    </ul>
+                </li>
+
+                <li class="nav-item"> 
+                    <a href="index.html" class="nav-dropbtn" >About</a>
+
+                    <ul class="nav-dropdown-content">
+                        <a href="catalog.html" class="nav-link">Lorem.</a>
+                        <a href="contact.html" class="nav-link">Lorem.</a>
+                    </ul>
+                </li>
+            <!-- and so on -->
+            </ul>
+        </nav>
+       
+        <button class="btn-theme-toggle" onclick="toggleTheme()">
+            <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" loading="lazy" class="theme-toggle-img">                   
+        </button>
+       
+
+        <div class="page-header-connect">
+            <a href="https://discord.com" target="_blank" class="link-discord">  
+                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="logo-discord">
+                Discord              
+            </a>
+
+            <a href="https://connect-wallet.html" target="_blank" class="link-connect-wallet">
+                <img src="./img/wallet.svg" alt="wallet" width="20" height="20" loading="lazy" class="logo-wallet">
+                Connect
+            </a>                              
+        </div>
+    </header>
+    
+    <main class="content">
+        <section class="item-detail">
+            <header class="item-detail-header">  <!-- если header уже имеет класс, есть ли смысл прописывать класс h, если кроме него там ничего нет? -->
+                <h1 class="item-detail-heading">ITEM DETAIL</h1>
+
+                <nav class="item-detail-nav">
+                    <ul class="item-detail-navlist hidden">
+                        <li class="item-detail-navitem">
+                            <a href="index.html" class="item-detail-navlink">Home</a>                       
+                        </li>
+    
+                        &VerticalLine; <!-- <hr class="vertical-line"> - этот вариант не очень или на уровне с этим? -->
+                       
+                        <li class="item-detail-navitem">
+                            <a href="catalog-items.html" class="item-detail-navlink">Item detail</a>
+                        </li>                    
+                    </ul>
+                </nav>
+            </header>
+           
+        
+            <article class="product-card">
+                 <figure class="product-info"> 
+                    <img src=".//img/item2.svg" alt="" width="400" height="400" loading="lazy" class="product-img">
+
+                    <figcaption class="product-name">SKISIRS#4587</figcaption>
+                </figure>
+
+                <p class="product-text">
+                    As the first hero of the Neoh Universe, collection has over 9,999 unique skins drawn from the different missions and challenges he faced throughout his life.
+                </p>
+
+                <dl class="product-features">
+                    <dt class="product-termin">Clothing</dt>
+                    <dd class="product-termin-description">SNAKE</dd>
+
+                    <dt class="product-termin">Eyes</dt>
+                    <dd class="product-termin-description">MIX</dd>
+
+                    <dt class="product-termin">Face</dt>
+                    <dd class="product-termin-description">GREEN</dd>
+
+                    <dt class="product-termin">Skin</dt>
+                    <dd class="product-termin-description">GREEN</dd>
+
+                    <dt class="product-termin">Background</dt>
+                        dd class="product-termin-description">GREEN LIGHT</dd>
+
+                    <dt class="product-termin">Special</dt>
+                    <dd class="product-termin-description">CAT</dd>
+
+                </dl>
+                
+                <p class="product-price">
+                    <span class="price">Price:</span> 0.15 ETH
+                </p>
+
+                <section class="timer">
+                   
+                    <h2 class="timer-heading">PUBLIC END IN</h2>
+                    
+                    <dl>
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">DAYS</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">HOURS</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">MINUTES</dt>
+                    
+                        <dt class="timer-value">00</dt>
+                        <dt class="timer-unit">SECONDS</dt>   
+                    </dl>     
+                    
+                    <div class="timer-separator">:</div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-separator">:</div>
+                </section>
+                
+                <button class="product-buybtn">
+                    <img src="/img/bag-icon.svg" alt="bagicon" width="10" height="10" loading="lazy" class="product-buybtn">
+                    BUY ON OPENSEA
+                </button> <!-- не понял, что такое opensea, больше похоже на сайт(соответсвенно надо было использовать "a"), но я сделаю button для разнообразия -->
+                
+                <a href="https://discord.com" class="product-buylink">
+                    <img src="/img/Discord.svg" alt="discord icon" width="10" height="10" loading="lazy" class="product-buylimg">
+                    JOIN DISCORD
+                </a>
+
+                <a href="http://x.com" class="product-buylink">
+                    <img src="twitter-icon.svg" alt="twitter icon" width="10" height="10" loading="lazy" class="product-buylimg">
+                    JOIN TWITTER
+                </a>
+            </article>                      
+        </section>
+
+        <section class="explore">
+            <h2 class="explore-heading">EXPLORE COLECTIONS</h2>    
+            
+            <ul class="products-list hidden">
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <img src=".//img/item1.svg" alt="picture description" width="270" height="250" loading="lazy" class="product-img">
+                            <span class="product-name">SKISIRS#02</span>
+                        </a>
+                    </article>
+                </li>
+                
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <figure>
+                                <img src=".//img/item2.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <figcaption class="item-name">SKISIRS#02</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+                
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <figure>
+                                <img src=".//img/item3.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <figure>
+                                <img src=".//img/item4.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <figure>
+                                <img src=".//img/item5.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <figure>
+                                <img src=".//img/item6.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
+                            </figure>
+                        </a>
+                    </article>
+                </li>
+            </ul>      
+
+            <ul class="pagination hidden"> 
+                <li class="pagination-item">
+                    <a href="#" class="pagination-item">&laquo;</a>
+                </li>
+
+                <li class="pagination-item">                    
+                    <a href="#" class="pagination-item">&raquo;</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <aside class="joinus">
+        <h2 class="joinus-heading">Join our community</h2>
+               
+        <p class="joinus-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        
+        <a href="https://discord.com" target="_blank" class="joinus-link">                 
+                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="joinus-logo">
+                Discord 
+        </a>
+    
+        <a href="whitelist.html" target="_blank" class="joinus-link"> Whitelist now </a>
+    </aside>
+
+    <footer class="footer-page-other">
+        <section class="footer-other">
+            <div class="footer-other-top-block">
+                
+                <div class="footer-other-logo">
+                    <a href="index.html" class="logo">
+                        <img src="./img/Logo.svg" alt="logo BinaBox" width="40" loading="lazy" class="logo-img">
+
+                        <span class="logo-text">Binabox</span>
+                    </a> 
+
+                    <p class="footer-text">We are the best way to check the rarity of NFT collection.</p>
+                </div>
+
+                <nav class="footer-other-nav">
+                    <h3 class="other-nav-heading">Subscribe</h3>
+
+                    <ul class="other-nav-list">
+                        <li class="other-nav-item">
+                            <a href="index.html" class="other-nav-link">Home</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="other-nav-link">About</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#" class="other-nav-link">Roadmap</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="other-nav-link">Our team</a>
+                        </li>
+
+                        <li class="footer-nav-item">
+                            <a href="#" class="other-nav-link">FAQs</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav-company">
+                    <h3 class="other-nav-heading">Company</h3> 
+
+                        <ul class="company-list">
+                            <li class="company-item">
+                                <a href="index.html" class="company-link">Terms Canditions</a>
+                            </li>
+
+                            <li class="company-item">
+                                <a href="#" class="company-link">Privacy Policy</a>
+                            </li>
+                            <li class="company-item">
+                                <a href="#" class="company-link">Whitepaper</a>
+                            </li>
+
+                            <li class="company-item">
+                                <a href="#" class="company-link">Help Center</a>
+                            </li>
+                        </ul>
+                </nav>
+
+                <form action="/user-email-newsletter" method="POST" class="subscription-form">                
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-other-bottom-block">
+                <p>&copy;Binabox 2022  - All rights reserved.</p> 
+
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="http://x.com" class="socials-link">
+                            <img src="./img/twitter-icon.svg" alt="twitter icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com" class="socials-link">
+                            <img src="./img/facebook-icon.svg" alt="facebook icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://t.me" class="socials-link">
+                            <img src="./img/telegram-icon.svg" alt="telegram icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://youtube.com" class="socials-link">
+                            <img src="./img/youtube-icon.svg" alt="youtube icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://tiktok.com" class="socials-link">
+                            <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://discord.com" class="socials-link">
+                            <img src="./img/Discord.svg" alt="discord icon" loading="lazy" class="socials-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer> 
+
+    <script src="timer.js"></script>
+</body>
+</html>
