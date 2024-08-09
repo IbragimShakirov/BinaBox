@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BinaBox UI KIT</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,18 +42,20 @@
                 </ul>
             </nav>
            
-            <button class="btn-theme-toggle" onclick="toggleTheme()">
-                <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" class="theme-toggle-img">                   
-            </button>
             
-            <div class="page-header-connect">
-                <a href="https://discord.com" target="_blank" class="link-discord">  
-                    <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
+            <div class="page-header-buttons">
+                
+                <button class="button-theme-toggle" onclick="toggleTheme()">
+                    <img src="./img/switch-sun.svg" alt="sun" width="48" height="48" class="theme-toggle-img">                   
+                </button>
+
+                <a href="https://discord.com" target="_blank" class="button-action">  
+                    <img src="./img/Discord.svg" alt="discord" width="24" height="24" class="logo-discord">
                     Discord              
                 </a>
 
-                <a href="https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                    <img src="./img/wallet.svg" alt="wallet" width="20" height="20" class="logo-wallet">
+                <a href="https://connect-wallet.html" target="_blank" class="button-action green">
+                    <img src="./img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
                     Connect
                 </a>                              
             </div>
@@ -61,21 +67,19 @@
 
             <p class="welcome-text">We are the best way to check the rarity of NFT collection</p>
 
-            <img src="./img/binabox-big-pic.svg" alt="Big box labeled binabox" width="300">
-
-            <div class="welcome-container">               
+            <div class="welcome-stats">               
                     <dl class="stat-list">
                         <dt class="stat-item">Total Iteam</dt>
-                        <dd class="stat-velue">2200+</dd>
+                        <dd class="stat-value">2200+</dd>
 
                         <dt class="stat-item">Profiles whitelisted</dt>
-                        <dd class="stat-velue">1000+</dd>
+                        <dd class="stat-value">1000+</dd>
                     </dl>          
 
                 <div class="welcome-buttons">
-                    <a href="connect-wallet.html" target="_blank" class="link-connect-wallet">Connect walet</a> 
+                    <a href="connect-wallet.html" target="_blank" class="button-action green">Connect walet</a> 
 
-                    <a href="whitelist.html" target="_blank" class="link-whitelist">Whitelist now</a> 
+                    <a href="whitelist.html" target="_blank" class="button-action green-border">Whitelist now</a> 
                 </div>
             </div>                      
         </section>
@@ -87,7 +91,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src=".//img/item1.svg" alt="picture description" width="100" class="product-img">
+                            <img src="./img/item1.png" alt="picture description" width="290" class="product-img">
                             <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
@@ -96,7 +100,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src=".//img/item2.svg" alt="picture description" width="100" class="product-img">
+                            <img src=".//img/item2.png" alt="picture description" width="290" class="product-img">
                             <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
@@ -105,7 +109,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src=".//img/item3.svg" alt="picture description"width="100"  class="product-img">
+                            <img src=".//img/item3.png" alt="picture description"width="290"  class="product-img">
                             <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
@@ -114,7 +118,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src="./img/item4.svg" alt="picture description" width="100" class="product-img">
+                            <img src="./img/item4.png" alt="picture description" width="290" class="product-img">
                             <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
@@ -123,7 +127,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src="./img/item5.svg" alt="picture description" width="100" class="product-img">
+                            <img src="./img/item5.png" alt="picture description" width="290" class="product-img">
                             <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
@@ -132,7 +136,7 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src="./img/item6.svg" alt="picture description" width="100" class="product-img">
+                            <img src="./img/item6.png" alt="picture description" width="290" class="product-img">
                             <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article> 
@@ -149,27 +153,27 @@
 
             <ol class="about-list">
                 <li class="about-list-item">
-                    <h3 class="about-tittle">01 HIGH QUALITY</h3>
+                    <h3 class="about-tittle"><span class="about-number">01</span> HIGH QUALITY</h3>
                     <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
                 </li>
                
                 <li class="about-list-item">
-                    <h3 class="about-tittle">02 BIG COLLECTION</h3>
+                    <h3 class="about-tittle"><span class="about-number">02</span> BIG COLLECTION</h3>
                     <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
                 </li>
                
                 <li class="about-list-item">
-                    <h3 class="about-tittle">03 TOP RESOURCE</h3>                   
+                    <h3 class="about-tittle"><span class="about-number">03</span> TOP RESOURCE</h3>                   
                     <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
                 </li>
                
                 <li class="about-list-item">
-                    <h3 class="about-tittle">04 BIG COMMUNITY</h3>
+                    <h3 class="about-tittle"><span class="about-number">04</span> BIG COMMUNITY</h3>
                     <p class="about-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
                 </li>                            
             </ol>
 
-            <a href="about.html" class="about-btn">Read More</a>
+            <a href="about.html" class="button-action green-border">Read More</a>
 
         </section>
 
@@ -179,7 +183,7 @@
             <ol class="how-steps">
                 <li class="how-step"> 
                     <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                        <img src="./img/wallet-and-card.svg" alt="wallet and card icon" width="40" class="how-img">
+                        <img src="./img/wallet-and-card.svg" alt="wallet and card" width="97" height="72" class="how-img">
                         <h3 class="how-step-heading">STEP 1</h3>
                         <p class="how-step-text">Connect Your Wallet</p>
                     </a>
@@ -187,7 +191,7 @@
                 
                 <li class="how-step"> 
                     <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                        <img src="./img/docs.svg" alt="docs icon" width="40" class="how-img">
+                        <img src="./img/docs.svg" alt="documents" width="97" height="72" class="how-img">
                         <h3 class="how-step-heading">STEP 2</h3>
                         <p class="how-step-text">Sellect Your Quailityt</p>
                     </a>
@@ -195,7 +199,7 @@
 
                 <li class="how-step"> 
                     <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                        <img src="./img/pig.svg" alt="pig icon" width="40" class="how-img">
+                        <img src="./img/pig.svg" alt="pig with coins" width="97" height="72" class="how-img">
                         <h3 class="how-step-heading">STEP 3</h3>
                         <p class="how-step-text">Confiem the Transaction</p>
                     </a>
@@ -203,7 +207,7 @@
 
                 <li class="how-step"> 
                     <a href=""https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                        <img src="./img/cart.svg" alt="cart icon" width="40" class="how-img">
+                        <img src="./img/cart.svg" alt="shopping cart" width="97" height="72" class="how-img">
                         <h3 class="how-step-heading">STEP 4</h3>
                         <p class="how-step-text">Receive Your NFTs</p>
                     </a>
@@ -216,39 +220,38 @@
 
             <div class="road-content">
                 <figure class="road-img">
-                    <img src="road-img1.svg" alt="green chip" width="1200" class="road-img1">
-                    <img src="road-img2.svg" alt="green chip" width="300" class="road-img2">
-                    <img src="road-img3.svg" alt="green chip" width="300" class="road-img2">
+                    <img src="./img/road-img2.png" alt="green chip" width="470" class="road-img1">
+                    <img src="./img/road-img2.png" alt="green chip" width="275" class="road-img2">
+                    <img src="./img/road-img2.png" alt="green chip" width="275" class="road-img2">
                 </figure>
 
-                <div class="road-phases">
-                    <!-- To hide a number from <ol> via CSS in the future, here(below in <ol>) I need to write class="hiden"? -->
-                    <ol class="road-phases-list">
-                        <li class="road-phases1">
-                            <h3 class="road-phases1-heading">PHASE 1</h3>
-                            <ul class="road-phases1-content">
-                                <li class="road-phases-text">
+                <div class="road">
+                    <ol class="road-list">
+                        <li class="road-item">
+                            <h3 class="road-item-heading">PHASE 1</h3>
+                            <ul class="road-item-content">
+                                <li class="road-item-text">
                                     <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
                                     Befriending & Chat Functions   
                                 </li>
 
-                                <li class="road-phases-text">
+                                <li class="road-item-text">
                                     <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
                                     Challenging Feature 
                                 </li>
 
-                                <li class="road-phases-text">
+                                <li class="road-item-text">
                                     <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
                                     Corsair Wheel
                                 </li>
 
-                                <li class="road-phases-text">
+                                <li class="road-item-text">
                                     <img src="./img/Logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13">
                                     Mobile Version Launch
                                 </li>
                             </ul>
 
-                            <a href="phase.html" class="btn-read-nore" target="_blank">READ MORE</a>
+                            <a href="phase.html" class="button-action green-border" target="_blank">READ MORE</a>
                         </li>
                         <!-- and so on... -->                       
                     </ol>              
@@ -277,7 +280,8 @@
         <section class="team">
             <h2 class="team-heading">Out team</h2>
             <article class="team-member">
-                <img src="./img/ralph-edwards.svg" alt="Ralph Edwards" width="130" class="member-img">
+                <img src="./img/ralph-edwards.png" alt="Ralph Edwards" width="130" class="member-img">
+                
 
                 <h3 class="member-name">Ralph Edwards</h3>
 
@@ -307,7 +311,7 @@
 
         <section class="partners">
             
-                   <h2 class="partners-heading"> <span class="partners-table-text">BINABOX</span> PARTNERS </h2>
+                   <h2 class="partners-heading"> <span class="partners-text">BINABOX</span> PARTNERS </h2>
                    
                    <ul class="partners-list">
                         <li class="parnter-item">
@@ -372,18 +376,16 @@
 
                 <p class="footer-top-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
-                <a href="https://discord.com" target="_blank" class="footer-link-discord">                 
+                <a href="https://discord.com" target="_blank" class="button-action blue">                 
                         <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
                         Discord 
                 </a>
 
-                <a href="whitelist.html" target="_blank" class="footer-link-whitelist"> Whitelist now </a>
+                <a href="whitelist.html" target="_blank" class="button-action green"> Whitelist now </a>
                 
-            
-                <!-- Iam forgot that we dont need to make this form and decided to leave it) -->
                 <form action="/user-email-newsletter" method="POST" class="subscription-form">                
                     <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                    <button type="submit" class="form-button green">Subscribe</button>
                 </form>
 
                 <ul class="socials-list">
@@ -425,10 +427,10 @@
             <div class="footer-top-block">              
                  <a href="index.html" class="logo">
                      <img src="./img/Logo.svg" alt="logo BinaBox" width="25" class="logo-img">
-                     <span class="logo-text">Binabox</span>
+                     <span class="footer-logo-text">Binabox</span>
                  </a> 
                
-                <p>&copy; 2022 Binabox - All rights reserved.</p> 
+                <p class="copy">&copy; 2022 Binabox - All rights reserved.</p> 
                 
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">

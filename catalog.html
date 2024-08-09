@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog BinaBox</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    
-    <header class="page-header">           
+<body class="page-catalog">  
+    <header class="page-header">          
         <a href="index.html" class="logo">
             <img src="./img/Logo.svg" alt="logo BinaBox" width="35" class="logo-img">
             <span class="logo-text">Binabox</span>
@@ -27,44 +30,43 @@
                 </li>
 
                 <li class="nav-item"> 
-                    <a href="index.html" class="nav-dropbtn" >About</a>
+                    <a href="index.html" class="nav-dropbtn" >Home</a>
 
                     <ul class="nav-dropdown-content">
                         <a href="catalog.html" class="nav-link">Catalog</a>
                         <a href="contact.html" class="nav-link">Contact us</a>
                     </ul>
                 </li>
-            <!-- and so on -->
+            
             </ul>
         </nav>
-       
-        <button class="btn-theme-toggle" onclick="toggleTheme()">
-            <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" class="theme-toggle-img">                   
-        </button>
-       
 
-        <div class="page-header-connect">
-            <a href="https://discord.com" target="_blank" class="link-discord">  
-                <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
+        <div class="page-header-buttons">
+            <button class="button-theme-toggle" onclick="toggleTheme()">
+                <img src="./img/switch-sun.svg" alt="sun" width="48" height="48" class="theme-toggle-img">                   
+            </button>
+
+            <a href="https://discord.com" target="_blank" class="button-action">  
+                <img src="./img/Discord.svg" alt="discord" width="24" height="24" class="logo-discord">
                 Discord              
             </a>
 
-            <a href="https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                <img src="./img/wallet.svg" alt="wallet" width="20" height="20" class="logo-wallet">
+            <a href="https://connect-wallet.html" target="_blank" class="button-action green">
+                <img src="./img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
                 Connect
             </a>                              
         </div>
     </header>
     
     <main class="content">
-         <section class="welcome-container"> <!--или лучше div? -->
-            <h1 class="welcome-heading">EXPLORE COLECTIONS</h1>
-            <nav class="welcome-nav">
-                <ul>
-                    <a href="index.html" class="welcome-nav-link">Home</a>
-                    
-                    <a href="catalog.html" class="welcome-nav-link">Collections</a>
-                </ul>
+        <section class="welcome-container">
+            <h1 class="welcome-container-heading">EXPLORE COLECTIONS</h1>
+
+            <nav class="breadcrumb-nav">
+                <ol class="breadcrumb">
+                    <li><a href="#" class="breadcrumb-link" >Home</a></li>
+                    <li><a href="#" class="breadcrumb-link" >Products</a></li>                   
+                </ol>
             </nav>
         </section>
 
@@ -73,7 +75,7 @@
 
             <search role="search" class="search-block">
                 <form action="#" class="search-form">
-                    <input type="search" placeholder="Search NFT">
+                    <input type="search" class="search-nft" placeholder="Search NFT">
 
                     <button type="submit" class="search-button">
                         <img src="./img/loupe-icon.svg" alt="Loupe icon" class="search-img">
@@ -81,104 +83,69 @@
                 </form>
             </search>
 
-            <aside class="sidebar-filters">   
-                   <!-- Здесь нужен search?          -->
-                <ul class="filter-list hidden">
-                    <li class="filter-point">
-                        <span class="filter-point-heading">Clothing</span>
+            <div class="applyed-filter">
+                <button type="reset" class="button-search-reset">Clear All</button>
+            </div>
 
-                        <label class="filter-item">
-                            <input type="checkbox" value="clothing" class="filter-item-button">Combatant 
-                        </label>
+            <aside class="sidebar-filters">                    
+                <div class="filter-container">
+                    <input type="checkbox" id="toggle-filter" class="toggle-filter">
+                    
+                    <label for="toggle-filter" class="filter-header">
+                        <span class="filter-title">CLOTHING</span>
+                    </label>
 
-                        <label class="filter-item">
-                            <input type="checkbox" value="clothing" class="filter-item-button">Ninja 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="clothing" class="filter-item-button">King 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="clothing" class="filter-item-button">Queen 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="clothing" class="filter-item-button">Robot 
-                        </label>
-                    </li>
-
-                    <li>
-                        <span class="filter-point-heading">EYES</span>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Yellow 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Green 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Mix 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Orange 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Glow 
-                        </label>
-
-                        <label class="filter-item">
-                            <input type="checkbox" value="eyes" class="filter-item-button">Blue 
-                        </label>
-                    </li>
-                    <!-- and so on -->                
-                </ul>              
+                    <div class="filter-options">
+                        <label><input type="checkbox"> Combatant</label>
+                        <label><input type="checkbox"> Ninja</label>
+                        <label><input type="checkbox"> King</label>
+                        <label><input type="checkbox"> Queen</label>
+                        <label><input type="checkbox"> Robot</label>
+                    </div>
+                </div>                    
             </aside>
 
-            <aside class="sidebar-selected-filters">                
-                    <button class="resetFilters" type="reset">Clear All</button>              
-            </aside>
-
-            <article class="catalog-item">
-                <img src=".//img/item1.svg" alt="picture description" width="200" class="item-img">
-                <span class="item-name">SKISIRS#2</span>
-            </article>
-
-            <!-- and so on -->
+            <ul class="products-list">
+                <li class="products-item">
+                    <article class="product">
+                        <a href="catalog-items.html" class="product-link">
+                            <img src="./img/item1.png" alt="picture description" width="200" class="product-img">
+                            <span class="product-name">SKISIRS#2</span>
+                        </a>
+                    </article>
+                </li>
+            </ul>
         </section> 
     </main>
     
+    <aside class="joinus">
+        <h2 class="joinus-heading">Join our community</h2>
+               
+        <p class="joinus-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        
+        <a href="https://discord.com" target="_blank" class="button-action blue">                 
+                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="logo-discord">
+                Discord 
+        </a>
+    
+        <a href="whitelist.html" target="_blank" class="button-action green"> Whitelist now </a>
+    </aside>
+
     <footer class="footer-page-other">
         <section class="footer-other">
-            <div class="footer-other-top-block">
-                <h2 class="footer-other-top-heading">Join our community</h2>
-
-                <p class="footer-other-top-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
-                <a href="https://discord.com" target="_blank" class="footer-link-discord">                 
-                        <img src="./img/Discord.svg" alt="discord" width="20" height="20" class="logo-discord">
-                        Discord 
-                </a>
-
-                <a href="whitelist.html" target="_blank" class="footer-link-whitelist"> Whitelist now </a>
-                
+            <div class="footer-other-top">
                 <div class="footer-other-logo">
-                <a href="index.html" class="logo">
-                    <img src="./img/Logo.svg" alt="logo BinaBox" width="40" class="logo-img">
+                    <a href="index.html" class="logo">
+                        <img src="./img/Logo.svg" alt="logo BinaBox" width="40" class="logo-footer-img">
 
-                    <span class="logo-text">Binabox</span>
-                </a> 
+                        <span class="logo-footer-text">Binabox</span>
+                    </a> 
 
                     <p class="footer-text">We are the best way to check the rarity of NFT collection.</p>
                 </div>
 
                 <nav class="footer-other-nav">
-
-                    <span class="other-nav">Subscribe</span>
+                    <h4 class="other-nav">SUBSCRIBE</h4>
 
                     <ul class="other-nav-list">
                         <li class="other-nav-item">
@@ -188,6 +155,7 @@
                         <li class="footer-nav-item">
                             <a href="#" class="other-nav-link">About</a>
                         </li>
+
                         <li class="footer-nav-item">
                             <a href="#" class="other-nav-link">Roadmap</a>
                         </li>
@@ -202,33 +170,37 @@
                     </ul>
                 </nav>
 
-                <nav class="footer-nav-company">
-                    <span class="company">Company</span> 
-
-                        <ul class="company-list">
-                            <li class="company-item">
-                                <a href="index.html" class="company-link">Terms Canditions</a>
+                <nav class="footer-nav-documentation">
+                    <h4 class="documentation-heading">COMPANY</h4> 
+                        <ul class="documentation-list">
+                            <li class="documentation-item">
+                                <a href="index.html" class="documentation-link">Terms Canditions</a>
                             </li>
 
-                            <li class="company-item">
-                                <a href="#" class="company-link">Privacy Policy</a>
-                            </li>
-                            <li class="company-item">
-                                <a href="#" class="company-link">Whitepaper</a>
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Privacy Policy</a>
                             </li>
 
-                            <li class="company-item">
-                                <a href="#" class="company-link">Help Center</a>
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Whitepaper</a>
+                            </li>
+
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Help Center</a>
                             </li>
                         </ul>
                 </nav>
 
-                <form action="/user-email-newsletter" method="POST" class="subscription-form">                
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                <form action="/user-email-newsletter" method="POST" class="subscription-form">   
+                    <label for="email" class="subscription-form-heading">SUBSCRIBE</label>
+
+                    <input type="email" id="email" name="email" class="" placeholder="Enter your email" required>
+
+                    <button type="submit" class="button-subscribe green">SUBSCRIBE</button>
                 </form>
             </div>
-            <div class="footer-other-bottom-block">
+
+            <div class="footer-copy">
                 <p>&copy;Binabox 2022  - All rights reserved.</p> 
             </div>
 
