@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKISIRS#4587 - BinaBox</title>
-    <link rel="stylesheet" href="./css/style.css">    
-</head>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 
 <body>   
-    <header class="page-header">           
+    <header class="page-header">          
         <a href="index.html" class="logo">
-            <img src="./img/Logo.svg" alt="logo BinaBox" width="35" height="35" loading="lazy" class="logo-img">
+            <img src="./img/Logo.svg" alt="logo BinaBox" width="35" class="logo-img">
             <span class="logo-text">Binabox</span>
         </a>           
 
@@ -26,30 +29,29 @@
                 </li>
 
                 <li class="nav-item"> 
-                    <a href="index.html" class="nav-dropbtn" >About</a>
+                    <a href="index.html" class="nav-dropbtn" >Home</a>
 
                     <ul class="nav-dropdown-content">
-                        <a href="catalog.html" class="nav-link">Lorem.</a>
-                        <a href="contact.html" class="nav-link">Lorem.</a>
+                        <a href="catalog.html" class="nav-link">Catalog</a>
+                        <a href="contact.html" class="nav-link">Contact us</a>
                     </ul>
                 </li>
-            <!-- and so on -->
+            
             </ul>
         </nav>
-       
-        <button class="btn-theme-toggle" onclick="toggleTheme()">
-            <img src="./img/switch-sun.svg" alt="sun" width="20" height="20" loading="lazy" class="theme-toggle-img">                   
-        </button>
-       
 
-        <div class="page-header-connect">
-            <a href="https://discord.com" target="_blank" class="link-discord">  
-                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="logo-discord">
+        <div class="page-header-buttons">
+            <button class="button-theme-toggle" onclick="toggleTheme()">
+                <img src="./img/switch-sun.svg" alt="sun" width="48" height="48" class="theme-toggle-img">                   
+            </button>
+
+            <a href="https://discord.com" target="_blank" class="button-action">  
+                <img src="./img/Discord.svg" alt="discord" width="24" height="24" class="logo-discord">
                 Discord              
             </a>
 
-            <a href="https://connect-wallet.html" target="_blank" class="link-connect-wallet">
-                <img src="./img/wallet.svg" alt="wallet" width="20" height="20" loading="lazy" class="logo-wallet">
+            <a href="https://connect-wallet.html" target="_blank" class="button-action green">
+                <img src="./img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
                 Connect
             </a>                              
         </div>
@@ -57,30 +59,22 @@
     
     <main class="content">
         <section class="item-detail">
-            <header class="item-detail-header">  <!-- если header уже имеет класс, есть ли смысл прописывать класс h, если кроме него там ничего нет? -->
-                <h1 class="item-detail-heading">ITEM DETAIL</h1>
-
-                <nav class="item-detail-nav">
-                    <ul class="item-detail-navlist hidden">
-                        <li class="item-detail-navitem">
-                            <a href="index.html" class="item-detail-navlink">Home</a>                       
-                        </li>
+            <section class="welcome-container">
+                <h1 class="welcome-container-heading">ITEM DETAIL</h1>
     
-                        &VerticalLine; <!-- <hr class="vertical-line"> - этот вариант не очень или на уровне с этим? -->
-                       
-                        <li class="item-detail-navitem">
-                            <a href="catalog-items.html" class="item-detail-navlink">Item detail</a>
-                        </li>                    
-                    </ul>
+                <nav class="breadcrumb-nav">
+                    <ol class="breadcrumb">
+                        <li><a href="#" class="breadcrumb-link" >Home</a></li>
+                        <li><a href="#" class="breadcrumb-link" >Item Detail</a></li>                   
+                    </ol>
                 </nav>
-            </header>
-           
+            </section>
         
             <article class="product-card">
                  <figure class="product-info"> 
                     <img src=".//img/item2.svg" alt="" width="400" height="400" loading="lazy" class="product-img">
 
-                    <figcaption class="product-name">SKISIRS#4587</figcaption>
+                    <figcaption class="product-tittle">SKISIRS#4587</figcaption>
                 </figure>
 
                 <p class="product-text">
@@ -89,27 +83,26 @@
 
                 <dl class="product-features">
                     <dt class="product-termin">Clothing</dt>
-                    <dd class="product-termin-description">SNAKE</dd>
+                    <dd class="product-description">SNAKE</dd>
 
                     <dt class="product-termin">Eyes</dt>
-                    <dd class="product-termin-description">MIX</dd>
+                    <dd class="product-description">MIX</dd>
 
                     <dt class="product-termin">Face</dt>
-                    <dd class="product-termin-description">GREEN</dd>
+                    <dd class="product-description">GREEN</dd>
 
                     <dt class="product-termin">Skin</dt>
-                    <dd class="product-termin-description">GREEN</dd>
+                    <dd class="product-description">GREEN</dd>
 
                     <dt class="product-termin">Background</dt>
-                        dd class="product-termin-description">GREEN LIGHT</dd>
+                    <dd class="product-termin-description">GREEN LIGHT</dd>
 
                     <dt class="product-termin">Special</dt>
                     <dd class="product-termin-description">CAT</dd>
-
                 </dl>
                 
                 <p class="product-price">
-                    <span class="price">Price:</span> 0.15 ETH
+                    Price:<span class="price">0.15 ETH</span> 
                 </p>
 
                 <section class="timer">
@@ -135,18 +128,18 @@
                     <div class="timer-separator">:</div>
                 </section>
                 
-                <button class="product-buybtn">
-                    <img src="/img/bag-icon.svg" alt="bagicon" width="10" height="10" loading="lazy" class="product-buybtn">
+                <button class="button-buy green">
+                    <img src="/img/bag-icon.svg" alt="bagicon" width="24" loading="lazy" class="product-buybtn">
                     BUY ON OPENSEA
                 </button> <!-- не понял, что такое opensea, больше похоже на сайт(соответсвенно надо было использовать "a"), но я сделаю button для разнообразия -->
                 
-                <a href="https://discord.com" class="product-buylink">
-                    <img src="/img/Discord.svg" alt="discord icon" width="10" height="10" loading="lazy" class="product-buylimg">
+                <a href="https://discord.com" class="button-action white-border">
+                    <img src="/img/Discord.svg" alt="discord icon" width="24"  loading="lazy" class="product-buylimg">
                     JOIN DISCORD
                 </a>
 
-                <a href="http://x.com" class="product-buylink">
-                    <img src="twitter-icon.svg" alt="twitter icon" width="10" height="10" loading="lazy" class="product-buylimg">
+                <a href="http://x.com" class="button-action white-border">
+                    <img src="twitter-icon.svg" alt="twitter icon" width="24"  loading="lazy" class="product-buylimg">
                     JOIN TWITTER
                 </a>
             </article>                      
@@ -155,11 +148,11 @@
         <section class="explore">
             <h2 class="explore-heading">EXPLORE COLECTIONS</h2>    
             
-            <ul class="products-list hidden">
+            <ul class="products-list">
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src=".//img/item1.svg" alt="picture description" width="270" height="250" loading="lazy" class="product-img">
+                            <img src=".//img/item1.png" alt="picture description" width="290" loading="lazy" class="product-img">
                             <span class="product-name">SKISIRS#02</span>
                         </a>
                     </article>
@@ -169,7 +162,7 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <figure>
-                                <img src=".//img/item2.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <img src=".//img/item2.png" alt="picture description" width="290" loading="lazy" class="product-img">
                                 <figcaption class="item-name">SKISIRS#02</figcaption>
                             </figure>
                         </a>
@@ -180,7 +173,7 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <figure>
-                                <img src=".//img/item3.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <img src=".//img/item3.png" alt="picture description" width="290" loading="lazy" class="product-img">
                                 <figurecaption class="item-name">SKISIRS#02</figurecaption>
                             </figure>
                         </a>
@@ -191,7 +184,7 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <figure>
-                                <img src=".//img/item4.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <img src=".//img/item4.png" alt="picture description" width="290" loading="lazy" class="product-img">
                                 <figurecaption class="item-name">SKISIRS#02</figurecaption>
                             </figure>
                         </a>
@@ -202,7 +195,7 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <figure>
-                                <img src=".//img/item5.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <img src=".//img/item5.png" alt="picture description" width="290" loading="lazy" class="product-img">
                                 <figurecaption class="item-name">SKISIRS#02</figurecaption>
                             </figure>
                         </a>
@@ -213,7 +206,7 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <figure>
-                                <img src=".//img/item6.svg" alt="picture description" width="200" height="200" loading="lazy" class="product-img">
+                                <img src=".//img/item6.png" alt="picture description" width="290" loading="lazy" class="product-img">
                                 <figurecaption class="item-name">SKISIRS#02</figurecaption>
                             </figure>
                         </a>
@@ -221,14 +214,14 @@
                 </li>
             </ul>      
 
-            <ul class="pagination hidden"> 
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item">&laquo;</a>
-                </li>
+            <ul class="pagination"> 
+                <button class="pagination-item">
+                    &laquo;
+                </button>
 
-                <li class="pagination-item">                    
-                    <a href="#" class="pagination-item">&raquo;</a>
-                </li>
+                <button class="pagination-item">                    
+                    &raquo;
+                </button>
             </ul>
         </section>
     </main>
@@ -238,30 +231,29 @@
                
         <p class="joinus-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         
-        <a href="https://discord.com" target="_blank" class="joinus-link">                 
-                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="joinus-logo">
+        <a href="https://discord.com" target="_blank" class="button-action blue">                 
+                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="logo-discord">
                 Discord 
         </a>
     
-        <a href="whitelist.html" target="_blank" class="joinus-link"> Whitelist now </a>
+        <a href="whitelist.html" target="_blank" class="button-action green"> Whitelist now </a>
     </aside>
 
     <footer class="footer-page-other">
         <section class="footer-other">
-            <div class="footer-other-top-block">
-                
+            <div class="footer-other-top">
                 <div class="footer-other-logo">
                     <a href="index.html" class="logo">
-                        <img src="./img/Logo.svg" alt="logo BinaBox" width="40" loading="lazy" class="logo-img">
+                        <img src="./img/Logo.svg" alt="logo BinaBox" width="40" class="logo-footer-img">
 
-                        <span class="logo-text">Binabox</span>
+                        <span class="logo-footer-text">Binabox</span>
                     </a> 
 
                     <p class="footer-text">We are the best way to check the rarity of NFT collection.</p>
                 </div>
 
                 <nav class="footer-other-nav">
-                    <h3 class="other-nav-heading">Subscribe</h3>
+                    <h4 class="other-nav">SUBSCRIBE</h4>
 
                     <ul class="other-nav-list">
                         <li class="other-nav-item">
@@ -271,6 +263,7 @@
                         <li class="footer-nav-item">
                             <a href="#" class="other-nav-link">About</a>
                         </li>
+
                         <li class="footer-nav-item">
                             <a href="#" class="other-nav-link">Roadmap</a>
                         </li>
@@ -285,73 +278,78 @@
                     </ul>
                 </nav>
 
-                <nav class="footer-nav-company">
-                    <h3 class="other-nav-heading">Company</h3> 
-
-                        <ul class="company-list">
-                            <li class="company-item">
-                                <a href="index.html" class="company-link">Terms Canditions</a>
+                <nav class="footer-nav-documentation">
+                    <h4 class="documentation-heading">COMPANY</h4> 
+                        <ul class="documentation-list">
+                            <li class="documentation-item">
+                                <a href="index.html" class="documentation-link">Terms Canditions</a>
                             </li>
 
-                            <li class="company-item">
-                                <a href="#" class="company-link">Privacy Policy</a>
-                            </li>
-                            <li class="company-item">
-                                <a href="#" class="company-link">Whitepaper</a>
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Privacy Policy</a>
                             </li>
 
-                            <li class="company-item">
-                                <a href="#" class="company-link">Help Center</a>
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Whitepaper</a>
+                            </li>
+
+                            <li class="documentation-item">
+                                <a href="#" class="documentation-link">Help Center</a>
                             </li>
                         </ul>
                 </nav>
 
-                <form action="/user-email-newsletter" method="POST" class="subscription-form">                
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                <form action="/user-email-newsletter" method="POST" class="subscription-form">   
+                    <label for="email" class="subscription-form-heading">SUBSCRIBE</label>
+
+                    <input type="email" id="email" name="email" class="" placeholder="Enter your email" required>
+
+                    <button type="submit" class="button-subscribe green">SUBSCRIBE</button>
                 </form>
             </div>
 
-            <div class="footer-other-bottom-block">
+            <div class="footer-copy">
                 <p>&copy;Binabox 2022  - All rights reserved.</p> 
-
-                <ul class="socials-list">
-                    <li class="socials-item">
-                        <a href="http://x.com" class="socials-link">
-                            <img src="./img/twitter-icon.svg" alt="twitter icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://facebook.com" class="socials-link">
-                            <img src="./img/facebook-icon.svg" alt="facebook icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://t.me" class="socials-link">
-                            <img src="./img/telegram-icon.svg" alt="telegram icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://youtube.com" class="socials-link">
-                            <img src="./img/youtube-icon.svg" alt="youtube icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="http://tiktok.com" class="socials-link">
-                            <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="http://discord.com" class="socials-link">
-                            <img src="./img/Discord.svg" alt="discord icon" loading="lazy" class="socials-img">
-                        </a>
-                    </li>
-                </ul>
             </div>
+
+            <ul class="socials-list">
+                <li class="socials-item">
+                    <a href="http://x.com" class="socials-link">
+                        <img src="./img/twitter-icon.svg" alt="twitter icon" class="socials-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://facebook.com" class="socials-link">
+                        <img src="./img/facebook-icon.svg" alt="facebook icon" class="socials-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://t.me" class="socials-link">
+                        <img src="./img/telegram-icon.svg" alt="telegram icon" class="socials-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://youtube.com" class="socials-link">
+                        <img src="./img/youtube-icon.svg" alt="youtube icon" class="socials-img">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://tiktok.com" class="socials-link">
+                        <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" class="socials-img">
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="http://discord.com" class="socials-link">
+                        <img src="./img/Discord.svg" alt="discord icon" class="socials-img">
+                    </a>
+                </li>
+            </ul>
         </section>
     </footer> 
+
+    
 
     <script src="timer.js"></script>
 </body>
