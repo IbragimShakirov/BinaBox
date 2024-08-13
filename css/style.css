@@ -1,73 +1,87 @@
 
-body{
-	font-family: "Bakbak One", "Roboto", sans-serif;
+body {
+  font-family: "Poppins","Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #1E1E1E;
+}
+	
+a {
+  font-family: "Bakbak One", "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: #fff;
-	background-color: #1E1E1E;
-}
-
-a{
   text-decoration: none;
-  color: currentColor;
   text-transform: uppercase;
 }
 
 ul,
-ol{
+ol {
   list-style: none;
-  color: currentColor;
 }
 
 h1,
 h2,
-h3{
-  color: currentColor;
+h3,
+h4 {
   text-transform:uppercase;
+  font-family: "Bakbak One", "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff;
 }
 
-h1{
+h1 {
   font-size: 72px;
 }
 
-h2{
+h2 {
   font-size: 44px;
-  line-height:56px;
+  line-height:1.2;
 }
 
-h3{
+h3 {
   font-size: 24px;
 }
-
-header{
-  text-transform: uppercase;	  
-}  
-
-.hidden{
+ 
+.hidden {
   display: none;
 }
 
-.page-header{
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.page-header {
   background-color: #040B11;
   display: inline-flex;
 }
 
-.logo{
+.logo {
   display: inline-flex;
   font-size: 32px;
-  line-height: 42px;
+  line-height: 1.3;
   gap: 16px;
 }
 
-.header-nav-list{
+.header-nav-list {
   display: flex; 
   font-size: 16px; 
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   gap: 32px;
 }
 
-.button-theme-toggle{ 
+.button-theme-toggle { 
   width: 48px;
   height: 48px;
   border: none;
@@ -75,42 +89,27 @@ header{
   background-color: #141B22;
 }
 
-.button-action{
+.button-action {
   border: 2px solid #141B22; 
   background-color: #141B22; 
   color: #fff; 
   font-size: 16px;  
-  line-height: 24px;
+  line-height: 1.5;
 	gap: 8px;	
-  }
-
-
-  
-.page-header-buttons{
+}
+ 
+.page-header-buttons {
 	display: inline-flex;
 	gap: 20px;
-  }
-
-.welcome-section{
-	background-image: url("../img/binabox-big-pic.svg"), url("../img/star.svg");
-	background-color: #141B22;
-	background-repeat: no-repeat;
 }
 
-.welcome-heading{
-  line-height:80px;
+.welcome-heading {
+  line-height:1.1;
 }
 .welcome-heading-text, .how-heading-text, .partners-text {
   color: #21E786;
 }
 
-.welcome-text{
-  font-family: "Poppins","Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
 
 /* .welcome-img{
 	position: relative;
@@ -120,221 +119,176 @@ header{
 	position: absolute;
 } */
 
-.stat-item{
-  font-family: "Poppins","Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.stat-item {
   font-size: 16px;
-  line-height:26px;
+  line-height:1.6;
   color: #C2C3C5;
 }
 
-.stat-value{
+.stat-value {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 44px;
-  line-height: 56px;
+  line-height: 1.2;
 }
 
-.product-name{
+.product-name {
   font-size: 20px;
-  line-height:28px;
+  line-height:1.4;
   text-transform: uppercase;
 }
 
-.about-tittle{
-line-height: 30px;
+.about-tittle {
+line-height: 1.2;
 }
 
-.about-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.about-text {
   font-size: 18px;
 }
 
-.about-item-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.about-item-text {
   font-size: 18px;
-  line-height: 28px;
 }
-.about-number{
+
+.about-number {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 80px;
+  line-height:1.2;
   color: transparent; 
   -webkit-text-stroke: 1px #21E786;
-  line-height:96px;
 }
 
-.button-read{
-  border: 2px solid #21E786; 
-  background-color: #141B22; 
-  color: #ffffff; 
-  font-size: 16px;  
-  gap: 8px;
-  line-height: 24px;
-}
-
-.how-step-heading{
+.how-step-heading {
   font-size: 22px;
   color: #21E786;
-  line-height: 30px;
+  line-height: 1.3;
 }
 
-.how-step-text{
+.how-step-text {
   font-size: 24px;
+  line-height: 1.3;
   text-transform: capitalize;
-  line-height: 32px;
 }
 
-.road-item-heading{
+.road-item-heading {
   font-size: 36px;
-  line-height: 44px;
+  line-height: 1.2;
 }
 
-.road-item-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.road-item-text {
   color: #C2C3C5;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5;
 }
 
-.phase-nav-btn{
-  background: none;     
-  border: none;   
-  color: currentColor;
+.phase-nav-item {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 20px;
-  line-height: 28px;
-}
-.phase-nav-item{
+  line-height: 1.4;
   display: inline;
 }
 
-.member-name{
+.member-name {
   text-transform: capitalize;
   font-size: 24px;
   line-height: 30px;
 }
 
-.member-position{ 
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.member-position { 
   color: #C2C3C5;
   font-size: 18px;
-  line-height: 28px;
 }
 
-.question-tittle{
+.question-tittle {
   text-transform: capitalize;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
 }
 
-.faq-answer{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 28px;
+.faq-answer {
   color: #C2C3C5;
   font-size: 18px;
 }
 
-.footer-top-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.footer-top-text {
   color: #C2C3C5;
   font-size: 18px;
-  line-height: 28px;
 }
 
-.green{
+.green {
   background-color: #21E786;
   color: #040B11;
 }
 
-.blue{
+.blue {
   background-color: #5865F2;
   color: currentColor;
 }
 
-.green-border{
+.green-border {
   border: 2px solid #21E786; 
   background-color: #141B22;
 }
 
-.white-border{
+.white-border {
   border: 2px solid #888B8E; 
   background-color: #141B22;
 }
 
-
-.form-button{
+.form-button {
   font-family: "Bakbak One", "Roboto", sans-serif;
-	font-weight: 400;
-	font-style: normal;
   text-transform: uppercase;
   font-size: 16px;
 }
 
-.footer-logo-text{
+.footer-logo-text {
   font-size: 22px;
-  line-height: 30px;
+  line-height: 1.3;
 }
 
-.footer-top-block{
+.footer-top-block {
   display: inline;
 }
 
-.copy{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 22px;
+.copy {
+  font-size: 14px;
+  color: #C2C3C5;
+  text-transform: capitalize;
+}
+
+.footer-nav-link {
+  font-family: "Poppins","Roboto", sans-serif;
+  line-height: 1.5;
   color: #C2C3C5;
   font-size: 14px;
   text-transform: capitalize;
 }
 
-.footer-nav-link{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 22px;
-  color: #C2C3C5;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-.footer-nav-item{
+.footer-nav-item {
   display: inline;
 }
-
 
 /* CATALOG PAGE */
 
-.page-catalog{
+.page-catalog {
   background-color: #000;
 }
 
-.welcome-container{
+.welcome-container {
   background-color: #141B22;
 }
 
-.welcome-container-heading{
+.welcome-container-heading {
   font-size: 44px;
-  line-height: 56px;
+  line-height: 1.3;
 }
 
-.breadcrumb-link{
+.breadcrumb-link {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
   color: #888B8E;
 }
 
-.catalog-heading{
+.catalog-heading {
   text-transform: capitalize;
 }
 
@@ -343,10 +297,6 @@ line-height: 30px;
   margin: 20px auto;
   background-color: #2b2b2b;
   padding: 10px;
-}
-
-.toggle-filter {
-  display: none;
 }
 
 .filter-header {
@@ -359,11 +309,12 @@ line-height: 30px;
 }
 
 .filter-title {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
 }
 
-.filter-header::after{
+.filter-header::after {
   content: "-";
 }
 
@@ -380,15 +331,11 @@ content: "+";
 }
 
 .filter-options {
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 22px;
   color: #C2C3C5;
   font-size: 14px;
+  line-height: 1.5;
   background-color: #141B22;
 }
-
 
 .filter-options label {
   display: block;
@@ -411,112 +358,156 @@ content: "+";
 background-color: #141B22;
 }
 
-::placeholder{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 26px;
+::placeholder {
   color: #888B8E;
   font-size: 14px;
+  line-height: 1.8;
   background-color: #141B22;
 }
 
-.button-search-reset{
-  line-height: 22px;
+.button-search-reset {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   color: #21E786;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.footer-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 26px;
-  color: #fff;
+.footer-text {
   font-size: 16px;
+  line-height: 1.6;
 }
 
-.joinus-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.joinus-text {
   font-size: 16px;
-  line-height: 26px;
-  color: #fff;
+  line-height: 1.6;
 }
 
-.logo-footer-text{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.logo-footer-text {
   font-size: 30px;
-  line-height: 42px;
+  line-height: 1.4;
 }
 
-.other-nav, .documentation-heading{
+.other-nav, .documentation-heading {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
-.other-nav-list, .documentation-list, .footer-copy{
-  font-family: "Poppins", "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.footer-copy {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
+}
+.documentation-list {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.other-nav-link, .documentation-link{
+.other-nav-list {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.other-nav-link, .documentation-link {
+  font-family: "Poppins","Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: C2C3C5;
   text-transform: capitalize;
 }
-
-.button-subscribe{
+.subscription-form-heading{
   font-family: "Bakbak One", "Roboto", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button-subscribe
+ {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   color: #040B11; 
   font-size: 16px;  
-  line-height: 24px;
+  line-height: 1.5;
 }
 
-.product-tittle{
+.product-tittle {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 44px;
-  line-height: 56px;
+  line-height: 1.2;
 }
 
-.product-text{
-  font-family: "Poppins","Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 30px;
+.product-description{
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.product-text {
   color: #C2C3C5;
 }
 
-.product-termin{
-  font-family: "Poppins","Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.product-termin {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   color: #C2C3C5;
 }
 
-.product-price{
+.product-price {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   font-size: 36px;
-  line-height: 44px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
-.price{
+.price {
   color:#21E786;
 }
 
-.button-buy{
+.button-buy {
   font-family: "Bakbak One", "Roboto", sans-serif;
-	font-weight: 400;
-	font-style: normal;
   color: #040B11; 
   font-size: 16px;  
-  line-height: 24px;
+  line-height: 1.5;
+}
+
+
+
+
+/* ---------styles for images--------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-image: url("../img/star.svg"), url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),;
+  background-color: #141B22;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 10% 20%, 80% 20%, 30% 70%, 60% 40%, 90% 90%;
+  background-size: 500px 500px, 400px 400px, 560px 560px, 450px 450px, 283px 283px;
+}
+
+.welcome-section {
+	background-image: url("../img/binabox-big-pic.svg");
+	background-color: #141B22;
+	background-repeat: no-repeat;
+}
+
+.theme-label .svg-icon {
+  cursor: pointer; 
+  transition: fill 0.3s ease;  
+}
+
+.theme-label .svg-background {
+  fill: #141B22;
+}
+
+.theme-label .svg-element {
+  fill: #21E786;
+}
+
+.theme-checkbox:checked + .theme-label .svg-background {
+  fill: #21E786; 
+}
+
+.theme-checkbox:checked + .theme-label .svg-element {
+  fill: #1B2226;
 }
