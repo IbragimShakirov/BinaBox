@@ -41,6 +41,7 @@ h1 {
 h2 {
   font-size: 44px;
   line-height:1.2;
+  text-align: center;
 }
 
 h3 {
@@ -96,6 +97,7 @@ h3 {
   font-size: 16px;  
   line-height: 1.5;
 	gap: 8px;	
+  text-align: center;
 }
  
 .page-header-buttons {
@@ -105,7 +107,18 @@ h3 {
 
 .welcome-heading {
   line-height:1.1;
+  text-align: left;
+  
 }
+
+.welcome-text {
+ text-align: left;
+}
+
+.welcome-stats {
+  text-align: left;
+}
+
 .welcome-heading-text, .how-heading-text, .partners-text {
   color: #21E786;
 }
@@ -135,18 +148,22 @@ h3 {
   font-size: 20px;
   line-height:1.4;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .about-tittle {
 line-height: 1.2;
+text-align: left;
 }
 
 .about-text {
   font-size: 18px;
+  text-align: center;
 }
 
 .about-item-text {
   font-size: 18px;
+  text-align: center;
 }
 
 .about-number {
@@ -155,6 +172,10 @@ line-height: 1.2;
   line-height:1.2;
   color: transparent; 
   -webkit-text-stroke: 1px #21E786;
+}
+
+.how-step {
+  text-align: center;
 }
 
 .how-step-heading {
@@ -172,12 +193,14 @@ line-height: 1.2;
 .road-item-heading {
   font-size: 36px;
   line-height: 1.2;
+  text-align: left;
 }
 
 .road-item-text {
   color: #C2C3C5;
   font-size: 18px;
   line-height: 1.5;
+  text-align: left;
 }
 
 .phase-nav-item {
@@ -185,6 +208,11 @@ line-height: 1.2;
   font-size: 20px;
   line-height: 1.4;
   display: inline;
+  text-align: left;
+}
+
+.team-member{
+  text-align: center;
 }
 
 .member-name {
@@ -198,7 +226,12 @@ line-height: 1.2;
   font-size: 18px;
 }
 
+.faqs-question {
+  text-align: left;
+}
+
 .question-tittle {
+  font-family: "Bakbak One", "Roboto", sans-serif;
   text-transform: capitalize;
   font-size: 24px;
   line-height: 1.25;
@@ -212,6 +245,7 @@ line-height: 1.2;
 .footer-top-text {
   color: #C2C3C5;
   font-size: 18px;
+  text-align: center;
 }
 
 .green {
