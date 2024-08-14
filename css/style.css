@@ -1,18 +1,25 @@
 
 body {
   font-family: "Poppins","Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
   background-color: #1E1E1E;
+  background-image: url("../img/star.svg"), url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg");
+  background-color: #141B22;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 10% 20%, 80% 20%, 30% 70%, 60% 40%, 90% 90%;
+  background-size: 500px 500px, 400px 400px, 560px 560px, 450px 450px, 283px 283px;
 }
 	
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   font-family: "Bakbak One", "Roboto", sans-serif;
 	font-weight: 400;
-	font-style: normal;
 	color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -30,7 +37,6 @@ h4 {
   text-transform:uppercase;
   font-family: "Bakbak One", "Roboto", sans-serif;
 	font-weight: 400;
-	font-style: normal;
 	color: #fff;
 }
 
@@ -506,19 +512,6 @@ background-color: #141B22;
 
 /* ---------styles for images--------- */
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  background-image: url("../img/star.svg"), url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),;
-  background-color: #141B22;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 10% 20%, 80% 20%, 30% 70%, 60% 40%, 90% 90%;
-  background-size: 500px 500px, 400px 400px, 560px 560px, 450px 450px, 283px 283px;
-}
-
 .welcome-section {
 	background-image: url("../img/binabox-big-pic.svg");
 	background-color: #141B22;
@@ -527,7 +520,7 @@ body {
 
 .theme-label .svg-icon {
   cursor: pointer; 
-  transition: fill 0.3s ease;  
+  transition: fill 0.3s;  
 }
 
 .theme-label .svg-background {
