@@ -1,18 +1,540 @@
-.partners-list {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 1px solid #000000;
-	border-collapse: collapse; 
-	background-color: #7de0d3;
+
+body {
+  font-family: "Poppins","Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #1E1E1E;
+  background-image: url("../img/star.svg"), url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg");
+  background-color: #141B22;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 10% 20%, 80% 20%, 30% 70%, 60% 40%, 90% 90%;
+  background-size: 500px 500px, 400px 400px, 560px 560px, 450px 450px, 283px 283px;
+}
+	
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.how-img {
-	background-color: rgb(23, 50, 50);
+a {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+	font-weight: 400;
+	color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
- .vertical-line {border-left: 6px solid green;  /* пока что просто добавил, потом уже по-уму можно сделать */
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 0;}
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform:uppercase;
+  font-family: "Bakbak One", "Roboto", sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 44px;
+  line-height:1.2;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+ 
+.hidden {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.page-header {
+  background-color: #040B11;
+  display: inline-flex;
+}
+
+.logo {
+  display: inline-flex;
+  font-size: 32px;
+  line-height: 1.3;
+  gap: 16px;
+}
+
+.header-nav-list {
+  display: flex; 
+  font-size: 16px; 
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  gap: 32px;
+}
+
+.button-theme-toggle { 
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 41px;
+  background-color: #141B22;
+}
+
+.button-action {
+  border: 2px solid #141B22; 
+  background-color: #141B22; 
+  color: #fff; 
+  font-size: 16px;  
+  line-height: 1.5;
+	gap: 8px;	
+  text-align: center;
+}
+ 
+.page-header-buttons {
+	display: inline-flex;
+	gap: 20px;
+}
+
+.welcome-heading {
+  line-height:1.1;
+  text-align: left;
+  
+}
+
+.welcome-text {
+ text-align: left;
+}
+
+.welcome-stats {
+  text-align: left;
+}
+
+.welcome-heading-text, .how-heading-text, .partners-text {
+  color: #21E786;
+}
+
+
+/* .welcome-img{
+	position: relative;
+}
+
+.star{
+	position: absolute;
+} */
+
+.stat-item {
+  font-size: 16px;
+  line-height:1.6;
+  color: #C2C3C5;
+}
+
+.stat-value {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.product-name {
+  font-size: 20px;
+  line-height:1.4;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.about-tittle {
+line-height: 1.2;
+text-align: left;
+}
+
+.about-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-item-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-number {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 80px;
+  line-height:1.2;
+  color: transparent; 
+  -webkit-text-stroke: 1px #21E786;
+}
+
+.how-step {
+  text-align: center;
+}
+
+.how-step-heading {
+  font-size: 22px;
+  color: #21E786;
+  line-height: 1.3;
+}
+
+.how-step-text {
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+.road-item-heading {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.road-item-text {
+  color: #C2C3C5;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.phase-nav-item {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  display: inline;
+  text-align: left;
+}
+
+.team-member{
+  text-align: center;
+}
+
+.member-name {
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.member-position { 
+  color: #C2C3C5;
+  font-size: 18px;
+}
+
+.faqs-question {
+  text-align: left;
+}
+
+.question-tittle {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.faq-answer {
+  color: #C2C3C5;
+  font-size: 18px;
+}
+
+.footer-top-text {
+  color: #C2C3C5;
+  font-size: 18px;
+  text-align: center;
+}
+
+.green {
+  background-color: #21E786;
+  color: #040B11;
+}
+
+.blue {
+  background-color: #5865F2;
+  color: currentColor;
+}
+
+.green-border {
+  border: 2px solid #21E786; 
+  background-color: #141B22;
+}
+
+.white-border {
+  border: 2px solid #888B8E; 
+  background-color: #141B22;
+}
+
+.form-button {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.footer-logo-text {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.footer-top-block {
+  display: inline;
+}
+
+.copy {
+  font-size: 14px;
+  color: #C2C3C5;
+  text-transform: capitalize;
+}
+
+.footer-nav-link {
+  font-family: "Poppins","Roboto", sans-serif;
+  line-height: 1.5;
+  color: #C2C3C5;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.footer-nav-item {
+  display: inline;
+}
+
+/* CATALOG PAGE */
+
+.page-catalog {
+  background-color: #000;
+}
+
+.welcome-container {
+  background-color: #141B22;
+}
+
+.welcome-container-heading {
+  font-size: 44px;
+  line-height: 1.3;
+}
+
+.breadcrumb-link {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #888B8E;
+}
+
+.catalog-heading {
+  text-transform: capitalize;
+}
+
+.filter-container {
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: #2b2b2b;
+  padding: 10px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #141B22;
+}
+
+.filter-title {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.filter-header::after {
+  content: "-";
+}
+
+.toggle-filter:checked + .filter-header::after {
+content: "+";
+}
+
+.toggle-filter:checked ~ .filter-options {
+  display: block;
+}
+
+.toggle-filter ~ .filter-options {
+  display: none;
+}
+
+.filter-options {
+  color: #C2C3C5;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #141B22;
+}
+
+.filter-options label {
+  display: block;
+  padding: 5px 0;
+}
+
+.breadcrumb li::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb li:last-child a {
+  color: #21E786; 
+}
+.search-form{
+background-color: #141B22;
+}
+
+::placeholder {
+  color: #888B8E;
+  font-size: 14px;
+  line-height: 1.8;
+  background-color: #141B22;
+}
+
+.button-search-reset {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  color: #21E786;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.joinus-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.logo-footer-text {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.other-nav, .documentation-heading {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-copy {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.documentation-list {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.other-nav-list {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.other-nav-link, .documentation-link {
+  font-family: "Poppins","Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: C2C3C5;
+  text-transform: capitalize;
+}
+.subscription-form-heading{
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button-subscribe
+ {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  color: #040B11; 
+  font-size: 16px;  
+  line-height: 1.5;
+}
+
+.product-tittle {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.product-description{
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.product-text {
+  color: #C2C3C5;
+}
+
+.product-termin {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #C2C3C5;
+}
+
+.product-price {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.price {
+  color:#21E786;
+}
+
+.button-buy {
+  font-family: "Bakbak One", "Roboto", sans-serif;
+  color: #040B11; 
+  font-size: 16px;  
+  line-height: 1.5;
+}
+
+
+
+
+/* ---------styles for images--------- */
+
+.welcome-section {
+	background-image: url("../img/binabox-big-pic.svg");
+	background-color: #141B22;
+	background-repeat: no-repeat;
+}
+
+.theme-label .svg-icon {
+  cursor: pointer; 
+  transition: fill 0.3s;  
+}
+
+.theme-label .svg-background {
+  fill: #141B22;
+}
+
+.theme-label .svg-element {
+  fill: #21E786;
+}
+
+.theme-checkbox:checked + .theme-label .svg-background {
+  fill: #21E786; 
+}
+
+.theme-checkbox:checked + .theme-label .svg-element {
+  fill: #1B2226;
+}
