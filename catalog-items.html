@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BinaBox UI KIT</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon-64x64.png" sizes="64x64" type="image/png">
-    <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <link rel="icon" href="/favicon-32x32.ico" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -19,7 +19,7 @@
 <body>
     <header class="page-header">        
         <a href="index.html" class="logo">
-            <img src="./img/Logo.svg" alt="logo BinaBox" width="35" height="40" class="logo-img">
+            <img src="./img/logo.svg" alt="logo BinaBox" width="36" height="40" class="logo-img">
 
             <span class="logo-text">Binabox</span>
         </a>           
@@ -29,23 +29,55 @@
                 <li class="nav-item"> 
                     <a href="index.html" class="nav-dropbtn" >Home</a>
 
-                    <ul class="nav-dropdown-content">
-                        <a href="catalog.html" class="nav-link">Catalog</a>
-                        <a href="contact.html" class="nav-link">Contact us</a>
+                    <ul>
+                        <li><a href="#"></a>#</li>
+                        <li><a href="#"></a>#</li>
                     </ul>
                 </li>
 
                 <li class="nav-item"> 
-                    <a href="index.html" class="nav-dropbtn" >Home</a>
+                    <a href="about.html" class="nav-dropbtn" >About</a>
 
-                    <ul class="nav-dropdown-content">
-                        <a href="catalog.html" class="nav-link">Catalog</a>
-                        <a href="contact.html" class="nav-link">Contact us</a>
+                    <ul>
+                        <li><a href="#"></a>#</li>
+                        <li><a href="#"></a>#</li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"> 
+                    <a href="roadmap.html" class="nav-dropbtn" >Roadmap</a>
+
+                    <ul>
+                        <li><a href="#"></a>#</li>
+                        <li><a href="#"></a>#</li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="catalog.html" class="nav-dropbtn">Collection</a>
+                </li>               
+
+                <li class="nav-item"> 
+                    <a href="faq.html" class="nav-dropbtn" >Faqs</a>
+
+                    <ul>
+                        <li><a href="#"></a>#</li>
+                        <li><a href="#"></a>#</li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"> 
+                    <a href="pages.html" class="nav-dropbtn" >Pages</a>
+
+                    <ul>
+                        <li><a href="#"></a>#</li>
+                        <li><a href="#"></a>#</li>
                     </ul>
                 </li>
             
             </ul>
         </nav>
+
 
         <div class="page-header-buttons">
             <input type="checkbox" id="themeCheckbox" class="theme-checkbox visually-hidden">
@@ -66,7 +98,9 @@
             </label>
 
             <a href="https://discord.com" target="_blank" class="button-action">  
-                <img src="./img/Discord.svg" alt="discord" width="24" height="24" class="logo-discord">
+                <svg width="24" height="24">
+                    <use href="/spite-social.svg#discord"></use>
+                </svg>
                 Discord              
             </a>
 
@@ -78,21 +112,25 @@
     </header>
     
     <main class="content">
-        <section class="item-detail">
-            <section class="welcome-container">
-                <h1 class="welcome-container-heading">ITEM DETAIL</h1>
-    
-                <nav class="breadcrumb-nav">
-                    <ol class="breadcrumb">
-                        <li><a href="#" class="breadcrumb-link" >Home</a></li>
-                        <li><a href="#" class="breadcrumb-link" >Item Detail</a></li>                   
-                    </ol>
-                </nav>
-            </section>
+        <section class="welcome-container">
+            <h1 class="welcome-container-heading">ITEM DETAIL</h1>
+            
+            <nav class="breadcrumb-nav">
+                <ol class="breadcrumb">
+                    <li><a href="#" class="breadcrumb-link" >Home</a></li>
+                    <li><a href="#" class="breadcrumb-link" >Item Detail</a></li>                   
+                </ol>
+            </nav>
+        </section>
         
+        <section class="item-detail">
             <article class="product-card">
                  <figure class="product-info"> 
-                    <img src=".//img/item2.svg" alt="" width="400" height="400" loading="lazy" class="product-img">
+                    <picture>
+                        <source srcset="./img/item2.webp" type="image/webp">
+                        <source srcset="./img/item2.png" type="image/png">
+                        <img src="./img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                    </picture>
 
                     <figcaption class="product-tittle">SKISIRS#4587</figcaption>
                 </figure>
@@ -149,17 +187,21 @@
                 </section>
                 
                 <button class="button-buy green">
-                    <img src="/img/bag-icon.svg" alt="bagicon" width="24" loading="lazy" class="product-buybtn">
+                    <img src="/img/bag-icon.svg" alt="bagicon" width="24" height="24" class="product-buybtn">
                     BUY ON OPENSEA
                 </button> <!-- не понял, что такое opensea, больше похоже на сайт(соответсвенно надо было использовать "a"), но я сделаю button для разнообразия -->
                 
                 <a href="https://discord.com" class="button-action white-border">
-                    <img src="/img/Discord.svg" alt="discord icon" width="24"  loading="lazy" class="product-buylimg">
+                    <svg width="24" height="24" >
+                        <use href="spite-social.svg#discord"></use>
+                    </svg>
                     JOIN DISCORD
                 </a>
 
                 <a href="http://x.com" class="button-action white-border">
-                    <img src="twitter-icon.svg" alt="twitter icon" width="24"  loading="lazy" class="product-buylimg">
+                    <svg width="24" height="24" >
+                        <use href="spite-social.svg#twitter"></use>
+                    </svg>
                     JOIN TWITTER
                 </a>
             </article>                      
@@ -172,8 +214,12 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <img src=".//img/item1.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                            <span class="product-name">SKISIRS#02</span>
+                            <picture>
+                                <source srcset="./img/item1.webp" type="image/webp">
+                                <source srcset="./img/item1.png" type="image/png">
+                                <img src="./img/item1.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                              </picture>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -181,10 +227,12 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <figure>
-                                <img src=".//img/item2.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                                <figcaption class="item-name">SKISIRS#02</figcaption>
-                            </figure>
+                            <picture>
+                                <source srcset="./img/item2.webp" type="image/webp">
+                                <source srcset="./img/item2.png" type="image/png">
+                                <img src="./img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                              </picture>
+                            <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -192,10 +240,13 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <figure>
-                                <img src=".//img/item3.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
-                            </figure>
+                            <picture>
+                                <source srcset="./img/item3.webp" type="image/webp">
+                                <source srcset="./img/item3.png" type="image/png">
+                                <img src="./img/item3.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                            </picture>
+                            
+                            <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -203,10 +254,12 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <figure>
-                                <img src=".//img/item4.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
-                            </figure>
+                            <picture>
+                                <source srcset="./img/item4.webp" type="image/webp">
+                                <source srcset="./img/item4.png" type="image/png">
+                                <img src="./img/item4.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                              </picture>
+                            <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -214,10 +267,12 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <figure>
-                                <img src=".//img/item5.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
-                            </figure>
+                            <picture>
+                                <source srcset="./img/item5.webp" type="image/webp">
+                                <source srcset="./img/item5.png" type="image/png">
+                                <img src="./img/item5.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                              </picture>
+                            <span class="item-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -225,14 +280,16 @@
                 <li class="products-item">
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
-                            <figure>
-                                <img src=".//img/item6.png" alt="picture description" width="290" loading="lazy" class="product-img">
-                                <figurecaption class="item-name">SKISIRS#02</figurecaption>
-                            </figure>
+                            <picture>
+                                <source srcset="./img/item6.webp" type="image/webp">
+                                <source srcset="./img/item6.png" type="image/png">
+                                <img src="./img/item6.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                              </picture>
+                            <span class="item-name">SKISIRS#2</span>
                         </a>
-                    </article>
+                    </article> 
                 </li>
-            </ul>      
+            </ul>
 
             <ul class="pagination"> 
                 <button class="pagination-item">
@@ -252,7 +309,9 @@
         <p class="joinus-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         
         <a href="https://discord.com" target="_blank" class="button-action blue">                 
-                <img src="./img/Discord.svg" alt="discord" width="20" height="20" loading="lazy" class="logo-discord">
+            <svg width="24" height="24">
+                <use href="/spite-social.svg#discord"></use>
+            </svg>
                 Discord 
         </a>
     
@@ -264,7 +323,7 @@
             <div class="footer-other-top">
                 <div class="footer-other-logo">
                     <a href="index.html" class="logo">
-                        <img src="./img/Logo.svg" alt="logo BinaBox" width="40" class="logo-footer-img">
+                        <img src="./img/Logo.svg" alt="logo BinaBox" width="32" height="36" class="logo-footer-img">
 
                         <span class="logo-footer-text">Binabox</span>
                     </a> 
@@ -329,47 +388,57 @@
             </div>
 
             <div class="footer-copy">
-                <p>&copy;Binabox 2022  - All rights reserved.</p> 
+                <p>&copy;BINABOX 2022  - All rights reserved.</p> 
             </div>
 
             <ul class="socials-list">
                 <li class="socials-item">
                     <a href="http://x.com" class="socials-link">
-                        <img src="./img/twitter-icon.svg" alt="twitter icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#twitter"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="http://facebook.com" class="socials-link">
-                        <img src="./img/facebook-icon.svg" alt="facebook icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#facebook"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="http://t.me" class="socials-link">
-                        <img src="./img/telegram-icon.svg" alt="telegram icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#telegram"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a href="http://youtube.com" class="socials-link">
-                        <img src="./img/youtube-icon.svg" alt="youtube icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#youtube"></use>
+                        </svg>
                     </a>
                 </li>
 
                 <li>
                     <a href="http://tiktok.com" class="socials-link">
-                        <img src="./img/tik-tok-icon.svg" alt="tik-tok icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#tik-tok"></use>
+                        </svg>
                     </a>
                 </li>
                 
                 <li>
                     <a href="http://discord.com" class="socials-link">
-                        <img src="./img/Discord.svg" alt="discord icon" class="socials-img">
+                        <svg width="20" height="20">
+                            <use href="/spite-social.svg#discord"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
         </section>
-    </footer> 
-
-    
+    </footer>    
 
     <script src="timer.js"></script>
 </body>
