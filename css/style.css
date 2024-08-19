@@ -638,4 +638,46 @@ details[open] summary::after {
   border-radius: 8px;
 }
 
+.subscription-field {
+  background-color: #333;
+	border: none;
+}
 
+.subscription-field::placeholder {
+  background-color: #C2C3C526;
+  border: none;
+}
+
+.form-button {
+  border: none;
+}
+
+.search-nft {
+  background-color: #fff;
+  border: none;
+}
+
+.search-nft::placeholder {
+  border: none;
+}
+
+.search-nft {
+	background-color: transparent;
+	border: none;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+}
+
+.pagination-item {
+  background-color: transparent;
+  color: #fff;
+  border-color: #21E786;
+}
+
+.pagination-item:hover {
+  background-color: #21E786;
+  color: #000;
+}

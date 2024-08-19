@@ -779,7 +779,11 @@
                 <a href="whitelist.html" target="_blank" class="button-action green"> Whitelist now </a>
                 
                 <form action="/user-email-newsletter" method="POST" class="subscription-form">                
-                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" 
+                           class="subscription-field"
+                           placeholder="Enter your email" 
+                           required 
+                           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
 
                     <button type="submit" class="form-button green">Subscribe</button>
                 </form>

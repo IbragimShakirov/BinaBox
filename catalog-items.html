@@ -293,11 +293,15 @@
 
             <ul class="pagination"> 
                 <button class="pagination-item">
-                    &laquo;
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 37L16 24.0001L30 11" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>     
                 </button>
 
                 <button class="pagination-item">                    
-                    &raquo;
+                    <svg transform="scale(-1, 1)" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 37L16 24.0001L30 11" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg> 
                 </button>
             </ul>
         </section>
@@ -378,12 +382,14 @@
                         </ul>
                 </nav>
 
-                <form action="/user-email-newsletter" method="POST" class="subscription-form">   
-                    <label for="email" class="subscription-form-heading">SUBSCRIBE</label>
+                <form action="/user-email-newsletter" method="POST" class="subscription-form">                
+                    <input type="email" 
+                           class="subscription-field"
+                           placeholder="Enter your email" 
+                           required 
+                           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
 
-                    <input type="email" id="email" name="email" class="" placeholder="Enter your email" required>
-
-                    <button type="submit" class="button-subscribe green">SUBSCRIBE</button>
+                    <button type="submit" class="form-button green">Subscribe</button>
                 </form>
             </div>
 
