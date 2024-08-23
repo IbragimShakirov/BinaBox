@@ -99,6 +99,9 @@ h3 {
   line-height: 1.5;
 	gap: 8px;	
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
 }
  
 .page-header-buttons {
@@ -274,6 +277,8 @@ text-align: left;
   font-family: "Bakbak One", "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
+  display: flex;
+  padding: 16px 36px;
 }
 
 .footer-logo-text {
@@ -337,6 +342,7 @@ text-align: left;
 
 .filter-header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
@@ -350,84 +356,61 @@ text-align: left;
   line-height: 1.4;
 }
 
-.filter-header::after {
-  content: url(/img/minus.svg);
-}
-
-.toggle-filter-clothing:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
-
-.toggle-filter-clothing:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-clothing ~ .filter-options {
-  display: none;
-}
-
-.toggle-filter-eyes:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
-  
-.toggle-filter-eyes:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-eyes ~ .filter-options {
-  display: none;
-}
-
-.toggle-filter-face:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
- 
-.toggle-filter-face:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-face ~ .filter-options {
-  display: none;
-}
-
-.toggle-filter-skin:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
- 
-.toggle-filter-skin:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-skin ~ .filter-options {
-  display: none;
-}
-
-.toggle-filter-background:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
- 
-.toggle-filter-background:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-background ~ .filter-options {
-  display: none;
-}
-
-.toggle-filter-special:checked + .filter-header::after {
-  content: url(/img/plus.svg);
-}
- 
-.toggle-filter-special:checked ~ .filter-options {
-  display: block;
-}
-
-.toggle-filter-special ~ .filter-options {
-  display: none;
-}
-
 .green-checkbox {
-  accent-color: #21E786;  /*  I havent found a way to colour the checkmark separately from the checkbox background( */
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.green-checkbox::before {
+  content: "";
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.green-checkbox:checked:before {
+  content: url(/img/checkmark.svg);
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0ABE66;
+  border-radius: 2px;
+  background: #21E786;
+  transition: .1s;
+}
+
+.filter-options {
+  display: flex;
+  padding-left: 23px;
+  border-top: 1px solid #434343;
+}
+
+.filter-header::after {
+  content: url(/img/plus.svg);
+}
+
+.toggle-filter:checked + .filter-header::after {
+  content: url(/img/minus.svg);
+  position: relative; 
+  top: 4px;
+}
+
+.toggle-filter ~ .filter-options {
+  display: none;
+}
+
+.toggle-filter:checked ~ .filter-options {
+  display: block;
 }
 
 .filter-options {
@@ -519,6 +502,10 @@ background-color: #141B22;
   line-height: 1.5;
 }
 
+.subscription-form {
+  display:inline-flex;
+}
+
 .button-subscribe
  {
   font-family: "Bakbak One", "Roboto", sans-serif;
@@ -573,15 +560,25 @@ background-color: #141B22;
 /* ---------styles for images--------- */
 
 .nav-dropbtn::after {
-  content: url(/img/arrow-down.svg) ;
+  content: url(/img/arrow-down.svg);
+  margin-left: 8px;
 }
 
-.nav-dropbtn[href^="catalog.html"]::after {
-  content: " ";
+.nav-dropbtn {
+  display: inline-flex;
 }
+
+.empty.nav-dropbtn::after {
+  content: " ";
+} 
 
 .page-main {
-  background-image: url("../img/star.svg"), url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg"),url("../img/star.svg");
+  background-image: url("/img/star.svg"), 
+                    url("/img/star.svg"),
+                    url("/img/star.svg"),
+                    url("/img/star.svg"),
+                    url("/img/star.svg");
+  position: absolute;
   background-color: #1E1E1E;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 10% 20%, 80% 20%, 30% 70%, 60% 40%, 90% 90%;
@@ -589,7 +586,7 @@ background-color: #141B22;
 }
 
 .welcome-section {
-	background-image: url("../img/binabox-big-pic.svg");
+	background-image: url("/img/binabox-big-pic.svg");
 	background-color: #141B22;
 	background-repeat: no-repeat;
 }
@@ -640,7 +637,7 @@ details[open] summary::after {
 
 .subscription-field {
   background-color: #333;
-	border: none;
+  border: none;
 }
 
 .subscription-field::placeholder {
@@ -666,10 +663,7 @@ details[open] summary::after {
 	border: none;
 }
 
-.search-button {
-  background-color: transparent;
-  border: none;
-}
+/*-clothing */
 
 .pagination-item {
   background-color: transparent;
@@ -681,3 +675,13 @@ details[open] summary::after {
   background-color: #21E786;
   color: #000;
 }
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+

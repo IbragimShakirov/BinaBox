@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
     <header class="page-header">        
         <a href="index.html" class="logo">
-            <img src="./img/logo.svg" alt="logo BinaBox" width="36" height="40" class="logo-img">
+            <img src="/img/logo.svg" alt="logo BinaBox" width="36" height="40" class="logo-img">
 
             <span class="logo-text">Binabox</span>
         </a>           
@@ -105,7 +105,7 @@
             </a>
 
             <a href="https://connect-wallet.html" target="_blank" class="button-action green">
-                <img src="./img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
+                <img src="/img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
                 Connect
             </a>                              
         </div>
@@ -127,9 +127,9 @@
             <article class="product-card">
                  <figure class="product-info"> 
                     <picture>
-                        <source srcset="./img/item2.webp" type="image/webp">
-                        <source srcset="./img/item2.png" type="image/png">
-                        <img src="./img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                        <source srcset="/img/item2.webp" type="image/webp">
+                        <source srcset="/img/item2.png" type="image/png">
+                        <img src="/img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                     </picture>
 
                     <figcaption class="product-tittle">SKISIRS#4587</figcaption>
@@ -186,10 +186,12 @@
                     <div class="timer-separator">:</div>
                 </section>
                 
-                <button class="button-buy green">
-                    <img src="/img/bag-icon.svg" alt="bagicon" width="24" height="24" class="product-buybtn">
+                <a href="#" class="button-action green">
+                    <svg width="24" height="24" >
+                        <use href="spite-social.svg#bag"></use>
+                    </svg>
                     BUY ON OPENSEA
-                </button> <!-- не понял, что такое opensea, больше похоже на сайт(соответсвенно надо было использовать "a"), но я сделаю button для разнообразия -->
+                </a>
                 
                 <a href="https://discord.com" class="button-action white-border">
                     <svg width="24" height="24" >
@@ -215,9 +217,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item1.webp" type="image/webp">
-                                <source srcset="./img/item1.png" type="image/png">
-                                <img src="./img/item1.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item1.webp" type="image/webp">
+                                <source srcset="/img/item1.png" type="image/png">
+                                <img src="/img/item1.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
                             <span class="product-name">SKISIRS#2</span>
                         </a>
@@ -228,9 +230,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item2.webp" type="image/webp">
-                                <source srcset="./img/item2.png" type="image/png">
-                                <img src="./img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item2.webp" type="image/webp">
+                                <source srcset="/img/item2.png" type="image/png">
+                                <img src="/img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
                             <span class="item-name">SKISIRS#2</span>
                         </a>
@@ -241,9 +243,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item3.webp" type="image/webp">
-                                <source srcset="./img/item3.png" type="image/png">
-                                <img src="./img/item3.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item3.webp" type="image/webp">
+                                <source srcset="/img/item3.png" type="image/png">
+                                <img src="/img/item3.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                             </picture>
                             
                             <span class="item-name">SKISIRS#2</span>
@@ -255,9 +257,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item4.webp" type="image/webp">
-                                <source srcset="./img/item4.png" type="image/png">
-                                <img src="./img/item4.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item4.webp" type="image/webp">
+                                <source srcset="/img/item4.png" type="image/png">
+                                <img src="/img/item4.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
                             <span class="item-name">SKISIRS#2</span>
                         </a>
@@ -268,9 +270,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item5.webp" type="image/webp">
-                                <source srcset="./img/item5.png" type="image/png">
-                                <img src="./img/item5.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item5.webp" type="image/webp">
+                                <source srcset="/img/item5.png" type="image/png">
+                                <img src="/img/item5.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
                             <span class="item-name">SKISIRS#2</span>
                         </a>
@@ -281,9 +283,9 @@
                     <article class="product">
                         <a href="catalog-items.html" class="product-link">
                             <picture>
-                                <source srcset="./img/item6.webp" type="image/webp">
-                                <source srcset="./img/item6.png" type="image/png">
-                                <img src="./img/item6.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
+                                <source srcset="/img/item6.webp" type="image/webp">
+                                <source srcset="/img/item6.png" type="image/png">
+                                <img src="/img/item6.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
                             <span class="item-name">SKISIRS#2</span>
                         </a>
@@ -293,15 +295,15 @@
 
             <ul class="pagination"> 
                 <button class="pagination-item">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 37L16 24.0001L30 11" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
-                    </svg>     
+                    <svg width="48" height="48">
+                        <use href="spite-social.svg#arrow-left"></use>
+                    </svg>
                 </button>
 
                 <button class="pagination-item">                    
-                    <svg transform="scale(-1, 1)" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 37L16 24.0001L30 11" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
-                    </svg> 
+                    <svg width="48" height="48" transform="scale(-1, 1)">
+                        <use href="spite-social.svg#arrow-left"></use>
+                    </svg>
                 </button>
             </ul>
         </section>
@@ -327,7 +329,7 @@
             <div class="footer-other-top">
                 <div class="footer-other-logo">
                     <a href="index.html" class="logo">
-                        <img src="./img/Logo.svg" alt="logo BinaBox" width="32" height="36" class="logo-footer-img">
+                        <img src="/img/Logo.svg" alt="logo BinaBox" width="32" height="36" class="logo-footer-img" loading="lazy">
 
                         <span class="logo-footer-text">Binabox</span>
                     </a> 
@@ -388,7 +390,6 @@
                            placeholder="Enter your email" 
                            required 
                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-
                     <button type="submit" class="form-button green">Subscribe</button>
                 </form>
             </div>
