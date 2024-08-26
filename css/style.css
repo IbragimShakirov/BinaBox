@@ -4,7 +4,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
-  background-color: #1E1E1E;
+  background-color: #0D0D11;
 }
 	
 img {
@@ -256,16 +256,18 @@ text-align: left;
 .green {
   background-color: #21E786;
   color: #040B11;
+  border: none;
 }
 
 .blue {
   background-color: #5865F2;
   color: currentColor;
+  border: none;
 }
 
 .green-border {
   border: 2px solid #21E786; 
-  background-color: #141B22;
+  background-color: transparent;
 }
 
 .white-border {
@@ -286,8 +288,8 @@ text-align: left;
   line-height: 1.3;
 }
 
-.footer-top-block {
-  display: inline;
+.footer-top-block, .footer-bottom-block {
+  display: flex;
 }
 
 .copy {
@@ -305,14 +307,11 @@ text-align: left;
 }
 
 .footer-nav-item {
-  display: inline;
+  display: flex;
 }
 
 /* CATALOG PAGE */
 
-.page-catalog {
-  background-color: #000;
-}
 
 .welcome-container {
   background-color: #141B22;
@@ -397,6 +396,8 @@ text-align: left;
 
 .filter-header::after {
   content: url(/img/plus.svg);
+  position: relative; 
+  top: 4px;
 }
 
 .toggle-filter:checked + .filter-header::after {
@@ -586,7 +587,9 @@ background-color: #141B22;
 }
 
 .welcome-section {
-	background-image: url("/img/binabox-big-pic.svg");
+	background-image: url("/img/binabox-big-pic.webp");
+  background-size: contain;
+  background-position: right;
 	background-color: #141B22;
 	background-repeat: no-repeat;
 }
@@ -685,3 +688,62 @@ details[open] summary::after {
   display: block;
 }
 
+.contacts-list {
+  display: inline-flex;
+  font-style: normal;
+  align-items: center;
+}
+.contacts-item {
+  display: flexbox;
+  font-style: normal;
+  align-items: center;
+  border: 1px solid #434343;
+
+  padding: 20px 40px;
+}
+
+.contacts-title {
+  text-transform: capitalize;
+  font-size: 36px;
+}
+
+.contacts-link {
+  font-family: "Poppins","Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: none;          
+}
+
+.message-fieldset input,
+.message-fieldset textarea {
+  color: #C2C3C5; 
+  background-color: #28282C;
+  border: none;
+}
+
+.message-fieldset input::placeholder,
+.message-fieldset textarea::placeholder {
+  color: #C2C3C5; 
+  background-color: #28282C;
+}
+
+.message-heading {
+  font-size: 44px; 
+  font-weight: bold;
+  text-align: center; 
+  margin-bottom: 4px;
+  color: #ffffff; 
+}
+
+.message-text {
+  font-size: 20px; 
+  line-height: 1.5;
+  text-align: center; 
+  margin-bottom: 60px; 
+}
+
+.message-fieldset {
+  border: none;
+  padding: 0; 
+  margin: 0; 
+}
