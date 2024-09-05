@@ -256,8 +256,15 @@ dl, dt, dd {
 }
 
 .product-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 20px 20px 0 20px;
+}
+
+.product-images {
+  display: block;
+  width: 290px;
+  height: 290px;
 }
 
 .product-name {
@@ -265,21 +272,42 @@ dl, dt, dd {
   line-height:1.4;
   text-transform: uppercase;
   text-align: left;
+  margin: 20px 0;
 }
 
-.about-tittle {
-line-height: 1.2;
-text-align: left;
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.about-heading {
+margin: 0;
 }
 
 .about-text {
   font-size: 18px;
   text-align: center;
+  margin: 16px auto 0;
 }
 
-.about-item-text {
-  font-size: 18px;
-  text-align: center;
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px auto 78px;
+  padding: 0;
+  gap: 30px;
+  min-width: 1170px;
+  
+}
+
+.about-list-item {
+  background-color: #141B22;
+}
+
+.about-tittle {
+  margin: 82px auto 12px 30px;
 }
 
 .about-number {
@@ -288,7 +316,16 @@ text-align: left;
   line-height:1.2;
   color: transparent; 
   -webkit-text-stroke: 1px #21E786;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 0;
 }
+
+.about-item-text {
+  font-size: 18px;
+  text-align: center;
+}
+
 
 .how-step {
   text-align: center;
@@ -369,6 +406,18 @@ text-align: left;
   background-color: #21E786;
   color: #040B11;
   border: none;
+  padding: 10px 22px;
+
+  gap: 8px;	
+  
+  display: inline-flex;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  padding: 12px 24px;
+  margin: 0px 0px;
+
 }
 
 .blue {
@@ -749,7 +798,7 @@ background-color: #141B22;
 }
 
 .question-tittle::after {
-  content: url(/img/minus.svg);            /*   I didnt found any other way to solve it, except JS or <input type=checkbox>, but as I know, the 2nd way in this case wont be good, as screen readers may not read it correctly */
+  content: url(/img/minus.svg);           
 }
 
 details[open] summary::after {
@@ -858,7 +907,6 @@ details[open] summary::after {
   width: 100%;
   max-width: 690px;
   height: auto;
-  max-height: 536px;
   margin: 0 auto;
   padding: 0;
 }
@@ -899,10 +947,16 @@ details[open] summary::after {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto auto;
   
+  padding: 0;
+  margin: 0;
   gap: 20px;
 }
 .message-item {
   grid-column: span 1;
+}
+
+.message-email {
+
 }
 
  .message-phone, .message-message, .message-button  {
@@ -910,7 +964,7 @@ details[open] summary::after {
 }
 
 .message-message {
-  width: 100%;   
+  max-width: 690px;   
   height: 150px;
 }
 

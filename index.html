@@ -17,13 +17,14 @@
 </head>
 
 <body>
-    <header class="header">   
-        <div class="container">
+    <header class="header container">   
             <div class="page-header">     
                 <a href="index.html" class="logo">
-                <img src="/img/logo.svg" alt="logo BinaBox" width="36" height="40" class="logo-img">
+                    <svg width="36" height="40" class="logo-img">
+                        <use href="/spite-social.svg#logo"></use>
+                    </svg>
 
-                <span class="logo-text">Binabox</span>
+                    <span class="logo-text">Binabox</span>
                 </a>    
 
                 <nav class="page-header-nav">
@@ -81,7 +82,7 @@
                 </nav>
 
                 <div class="page-header-buttons">
-                <input type="checkbox" id="themeCheckbox" class="theme-checkbox hidden">
+                <input type="checkbox" id="themeCheckbox" class="theme-checkbox hidden" aria-label="Light Theme Switcher">
 
                 <label for="themeCheckbox" class="theme-label">
                     <svg width="48" height="48" viewBox="0 0 48 48" class="svg-icon">
@@ -99,24 +100,24 @@
                 </label>
 
                 <a href="https://discord.com" target="_blank" class="button-action">  
-                <svg width="24" height="24">
-                    <use href="/spite-social.svg#discord"></use>
-                </svg>
-                Discord              
+                    <svg width="24" height="24">
+                        <use href="/spite-social.svg#discord"></use>
+                    </svg>
+                    Discord              
                 </a>
 
                 <a href="https://connect-wallet.html" target="_blank" class="button-action green">
-                <img src="/img/wallet.svg" alt="wallet" width="24" height="24" class="logo-wallet">
-                Connect
+                    <svg width="24" height="24">
+                        <use href="/spite-social.svg#wallet"></use>
+                    </svg>
+                    Connect
                 </a>                              
                 </div>
             </div>
-        </div>
     </header>
      
     <main class="page-main">
-        <section class="welcome-section">
-            <div class="container">
+        <section class="welcome-section container">
                 <h1 class="welcome-heading">
                     WITH 
                     <span class="welcome-heading-text">BINABOX</span>
@@ -140,8 +141,7 @@
                     <a href="connect-wallet.html" target="_blank" class="button-action green">Connect walet</a>
 
                     <a href="whitelist.html" target="_blank" class="button-action green-border">Whitelist now</a> 
-                </div>
-            </div>                  
+                </div>                 
         </section>
 
         <section class="products">
@@ -169,7 +169,7 @@
                                 <source srcset="/img/item2.png" type="image/png">
                                 <img src="/img/item2.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
-                            <span class="item-name">SKISIRS#2</span>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -183,7 +183,7 @@
                                 <img src="/img/item3.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                             </picture>
                             
-                            <span class="item-name">SKISIRS#2</span>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -196,7 +196,7 @@
                                 <source srcset="/img/item4.png" type="image/png">
                                 <img src="/img/item4.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
-                            <span class="item-name">SKISIRS#2</span>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -209,7 +209,7 @@
                                 <source srcset="/img/item5.png" type="image/png">
                                 <img src="/img/item5.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
-                            <span class="item-name">SKISIRS#2</span>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article>
                 </li>
@@ -222,14 +222,14 @@
                                 <source srcset="/img/item6.png" type="image/png">
                                 <img src="/img/item6.png" alt="Product Description" width="290" height="290" class="product-img" loading="lazy">
                               </picture>
-                            <span class="item-name">SKISIRS#2</span>
+                            <span class="product-name">SKISIRS#2</span>
                         </a>
                     </article> 
                 </li>
             </ul>          
         </section>
 
-        <section class="about">
+        <section class="about container">
             <h2 class="about-heading">About us</h2>
 
             <p class="about-text">
@@ -259,7 +259,6 @@
             </ol>
 
             <a href="about.html" class="button-action green-border">Read More</a>
-
         </section>
 
         <section class="how">
@@ -324,22 +323,30 @@
                             <h3 class="road-item-heading">PHASE 1</h3>
                             <ul class="road-item-content">
                                 <li class="road-item-text">
-                                    <img src="/img/logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13" loading="lazy">
+                                    <svg width="24" height="24" class="logo-img">
+                                        <use href="/spite-social.svg#logo"></use>
+                                    </svg>
                                     Befriending & Chat Functions   
                                 </li>
 
                                 <li class="road-item-text">
-                                    <img src="/img/logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13" loading="lazy">
+                                    <svg width="24" height="24" class="logo-img">
+                                        <use href="/spite-social.svg#logo"></use>
+                                    </svg>
                                     Challenging Feature 
                                 </li>
 
                                 <li class="road-item-text">
-                                    <img src="/img/logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13" loading="lazy">
+                                    <svg width="24" height="24" class="logo-img">
+                                        <use href="/spite-social.svg#logo"></use>
+                                    </svg>
                                     Corsair Wheel
                                 </li>
 
                                 <li class="road-item-text">
-                                    <img src="/img/logo.svg" alt="logo BinaBox" class="phase-logo-img" width="13" loading="lazy">
+                                    <svg width="24" height="24" class="logo-img">
+                                        <use href="/spite-social.svg#logo"></use>
+                                    </svg>
                                     Mobile Version Launch
                                 </li>
                             </ul>
@@ -847,9 +854,11 @@
 
             <div class="footer-bottom-block">              
                  <a href="index.html" class="logo">
-                     <img src="/img/logo.svg" alt="logo BinaBox" width="24" height="27" class="logo-img" loading="lazy">
+                    <svg width="24" height="27" class="logo-img">
+                        <use href="/spite-social.svg#logo"></use>
+                    </svg>
 
-                     <span class="footer-logo-text">Binabox</span>
+                    <span class="footer-logo-text">Binabox</span>
                  </a> 
                
                 <p class="copy">&copy; 2022 Binabox - All rights reserved.</p> 
