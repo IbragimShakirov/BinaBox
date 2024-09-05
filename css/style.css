@@ -888,21 +888,6 @@ details[open] summary::after {
   text-transform: none;          
 }
 
-.message-fieldset input,
-.message-fieldset textarea {
-  color: #C2C3C5; 
-  background-color: #28282C;
-  border: none;
-
-  padding: 14px 24px;
-}
-
-.message-fieldset input::placeholder,
-.message-fieldset textarea::placeholder {
-  color: #C2C3C5; 
-  background-color: #28282C;
-}
-
 .form-message {
   width: 100%;
   max-width: 690px;
@@ -911,7 +896,7 @@ details[open] summary::after {
   padding: 0;
 }
 
-.message-fieldset {
+  .message-fieldset {
   display: grid;
   grid-template-columns: 1fr;
 
@@ -941,30 +926,52 @@ details[open] summary::after {
   grid-column: span 2;
 }
 
-
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto auto;
-  
-  padding: 0;
-  margin: 0;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: stretch;
 }
+
 .message-item {
-  grid-column: span 1;
+  display: block;
+}
+
+.message-item input, 
+.message-message {
+  width: 100%;
+  padding: 14px 24px;
+  box-sizing: border-box;
+
+  color: #C2C3C5; 
+  background-color: #28282C;
+  border: none;
+}
+
+.message-item input::placeholder,
+.message-message::placeholder {
+  color: #C2C3C5; 
+  background-color: #28282C;
+}
+
+.message-name {
+  grid-column: 1 / 2;
 }
 
 .message-email {
-
+  grid-column: 2 / 3; 
 }
 
- .message-phone, .message-message, .message-button  {
-  grid-column: span 2;
+.message-phone {
+  grid-column: 1 / 3;
 }
 
 .message-message {
-  max-width: 690px;   
+  grid-column: 1 / 3; 
   height: 150px;
 }
 
+.message-button {
+  grid-column: 1 / 3; 
+  margin-top: 20px;
+}
